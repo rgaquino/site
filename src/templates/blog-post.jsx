@@ -1,9 +1,9 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react'
+import { Link, graphql } from 'gatsby'
 
-import Layout from "../components/Layout"
-import SEO from "../components/SEO"
-import { rhythm, scale } from "../utils/typography"
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
+import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -19,6 +19,7 @@ class BlogPostTemplate extends React.Component {
         />
         <article>
           <header>
+            <Link to="/">
             <h1
               style={{
                 marginTop: rhythm(1),
@@ -27,6 +28,7 @@ class BlogPostTemplate extends React.Component {
             >
               {post.frontmatter.title}
             </h1>
+            </Link>
             <p
               style={{
                 ...scale(-1 / 5),

@@ -4,7 +4,8 @@ class Hero extends Component {
     render() {
         return (
             <div>
-                <h1>Hi, I'm RG. Software Engineer based in Singapore.</h1>
+                <h1>Ralph Gregor Aquino</h1>
+                <p>Software Engineer based in Singapore</p>
             </div>
         )
     }
