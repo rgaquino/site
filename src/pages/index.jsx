@@ -1,10 +1,10 @@
 import React, { Fragment } from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
+import BlogSummary from "../components/BlogSummary"
 import Hero from "../components/Hero"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
-import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
   render() {
@@ -14,35 +14,10 @@ class BlogIndex extends React.Component {
 
     return (
       <Fragment>
-        <Hero />
         <Layout location={this.props.location} title={siteTitle}>
           <SEO title="Home" />
-          {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
-            return (
-              <article key={node.fields.slug}>
-                <header>
-                  <h3
-                    style={{
-                      marginBottom: rhythm(1 / 4),
-                    }}
-                  >
-                    <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                      {title}
-                    </Link>
-                  </h3>
-                  <small>{node.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                  />
-                </section>
-              </article>
-            )
-          })}
+          <Hero />
+          {posts.map(({ node }) => (<BlogSummary node={node}/>))}
         </Layout>
       </Fragment>
     )
