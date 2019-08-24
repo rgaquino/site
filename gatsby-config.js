@@ -1,12 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Ralph Gregor Aquino`,
+    title: `rgaquino`,
     author: `Ralph Gregor Aquino`,
     description: `My personal website.`,
-    siteUrl: `https://rgaquino.com`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    siteUrl: `https://rgaquino.com`
   },
   plugins: [
     {
