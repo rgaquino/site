@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react'
-import { Link } from 'gatsby'
+import React, { Fragment } from "react"
+import { Link } from "gatsby"
 
-import { rhythm, scale } from '../../utils/typography'
+import { rhythm, scale } from "../../utils/typography"
 
 class Layout extends React.Component {
   render() {
@@ -16,9 +16,7 @@ class Layout extends React.Component {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()} Ralph Gregor Aquino
-        </footer>
+        <footer>© {new Date().getFullYear()} Ralph Gregor Aquino</footer>
       </div>
     )
   }

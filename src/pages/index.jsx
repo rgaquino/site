@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react'
-import { graphql } from 'gatsby'
+import React, { Fragment } from "react"
+import { graphql } from "gatsby"
 
-import BlogSummary from '../components/BlogSummary'
-import Hero from '../components/Hero'
-import Layout from '../components/Layout'
-import SEO from '../components/SEO'
+import BlogSummary from "../components/BlogSummary"
+import Hero from "../components/Hero"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 
 class BlogIndex extends React.Component {
   render() {
@@ -16,7 +16,9 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Home" />
         <Hero />
-        {posts.map(({ node }) => (<BlogSummary node={node}/>))}
+        {posts.map(({ node }) => (
+          <BlogSummary node={node} />
+        ))}
       </Layout>
     )
   }

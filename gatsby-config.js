@@ -3,7 +3,7 @@ module.exports = {
     title: `rgaquino`,
     author: `Ralph Gregor Aquino`,
     description: `My personal website.`,
-    siteUrl: `https://rgaquino.com`
+    siteUrl: `https://rgaquino.com`,
   },
   plugins: [
     {
