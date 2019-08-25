@@ -19,7 +19,7 @@ class BlogPostTemplate extends React.Component {
         />
         <article>
           <header>
-            <Link to="/blog">
+            <Link to="/">
               <h1
                 style={{
                   marginTop: rhythm(1),

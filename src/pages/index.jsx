@@ -2,8 +2,9 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import ReactFullpage from '@fullpage/react-fullpage'
 
-import Hero from '../components/Hero'
+import BlogSummary from '../components/BlogSummary'
 import SEO from '../components/SEO'
+import Photo from '../components/Photo'
 
 import '../css/styles.css'
 
@@ -19,12 +20,13 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
+    const posts = data.allMarkdownRemark.edges
 
     return (
       <ReactFullpage
         scrollOverflow={true}
         scrollingSpeed={1000}
-        sectionsColor={['#bbb', 'purple', 'green']}
+        sectionsColor={['#bbb', '#afaae1', '#bbb']}
         onLeave={this.onLeave.bind(this)}
         afterLoad={this.afterLoad.bind(this)}
         render={({ fullpageApi }) => {
@@ -32,30 +34,23 @@ class BlogIndex extends React.Component {
             <ReactFullpage.Wrapper>
               <SEO title="Home" />
               <div className="section">
-                <Hero />
-                {/* <ul>
-                  <li>
-                    <Link to="/blog">blog</Link>
-                  </li>
-                  <li>
-                    <Link to="/">books (coming soon)</Link>
-                  </li>
-                  <li>
-                    <a href="https://instagram.com/rgaquino">
-                      photos (coming soon)
-                    </a>
-                  </li>
-                  <li>
-                    <Link to="/">notes (coming soon)</Link>
-                  </li>
-                </ul> */}
+                <Link to="/">
+                  <h1>Hi, I'm RG.</h1>
+                </Link>
+                <p>I'm a Software Engineer based in Singapore writing backend code for <a href="https://eatigo.com">@eatigo</a>. I write mostly in Go and JavaScript, previously (and now shunning) Java.</p>
+                </div>
+              <div className="section">
+                <h2>BLOG</h2>
+                {posts.map(({ node }) => (
+                  <BlogSummary node={node} />
+                ))}
               </div>
               <div className="section">
                 <div className="slide">
-                  <h2>BLOG</h2>
+                  <Photo />
                 </div>
                 <div className="slide">
-                  <h2>PHOTOS</h2>
+                  <h2>test-photo1</h2>
                 </div>
               </div>
             </ReactFullpage.Wrapper>
@@ -73,6 +68,21 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
       }
     }
   }
