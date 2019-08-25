@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://rgaquino.netlify.com/*"
+  to = "https://rgaquino.com/:splat"
+  force = true
+  status = 301
