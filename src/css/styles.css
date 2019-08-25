@@ -1,0 +1,29 @@
+.section h1 {
+  font-size: 3em;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.section h2 {
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+  }
+
+.fp-section {
+  text-align: center;
+}
+
+button {
+  padding: 0.93em 1.87em;
+  background: #35495e;
+  border-radius: 5px;
+  border-color: transparent;
+  display: block;
+  color: #fff;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 0.85em;
+}

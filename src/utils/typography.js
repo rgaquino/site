@@ -1,9 +1,9 @@
-import Typography from "typography"
-import GrandView from "typography-theme-grand-view"
+import Typography from 'typography'
+import GrandView from 'typography-theme-grand-view'
 
 GrandView.overrideThemeStyles = () => {
   return {
-    "a.gatsby-resp-image-link": {
+    'a.gatsby-resp-image-link': {
       boxShadow: `none`,
     },
   }

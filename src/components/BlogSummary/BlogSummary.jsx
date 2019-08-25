@@ -1,8 +1,8 @@
-import React, { Component } from "react"
-import PropTypes from "prop-types"
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-import { Link } from "gatsby"
-import { rhythm } from "../../utils/typography"
+import { Link } from 'gatsby'
+import { rhythm } from '../../utils/typography'
 
 class BlogSummary extends Component {
   render() {
