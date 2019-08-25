@@ -1,6 +1,7 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
+import BlogSummary from "../components/BlogSummary"
 import Hero from "../components/Hero"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
@@ -13,9 +14,11 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Home" />
+        <SEO title="Blog" />
         <Hero />
-        <Link to="/blog">BLOG</Link>
+        {posts.map(({ node }) => (
+          <BlogSummary node={node} />
+        ))}
       </Layout>
     )
   }
