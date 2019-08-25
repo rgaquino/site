@@ -16,46 +16,43 @@ class Intro extends Component {
             <p>
               I'm a Software Engineer based in Singapore currently writing
               backend code for <a href="https://github.com/eatigo">@eatigo</a>.
-              I now write mostly in Go and JavaScript and previously worked on
-              financial web apps mainly using Java.
+              Nowadays I write mostly in Go and JavaScript, but I previously
+              worked on financial web applications mainly using Java.
             </p>
             <p>
               I'm using this website as a command center for my digital life and
               as a way to learn new tech as they come. I'm calling it{' '}
               <strong>The Rocinante Project</strong>, with the end goal of
               having expertise on multiple web development stacks and not get
-              overwhelmed by how much there is to learn.
-            </p>
-            <p>
-              I'm <Link to="/blog">blogging</Link> about the steps of building
-              this website from design to implementation to both track my
-              progress and as a way for others to learn from them. I believe in
-              the value of not erasing our own learning arc by not feigning
-              perfection. I will also post random rants because why not.
+              overwhelmed by how much there is to learn. I'm{' '}
+              <Link to="/blog">blogging</Link> about the steps of building this
+              website from design to implementation to both track my progress
+              and as a way for others to learn from them. I believe in the value
+              of not erasing our own learning arc by never feigning perfection.
             </p>
             <p>
               On my free time, I read a ton of{' '}
               <a href="https://trello.com/b/0SUpWrLd"> books</a> ranging from
               contemporary fiction, narrative non-fiction, and the occassional
               young adult novel. My favorite authors include Jack Kerouac, Cixin
-              Liu, Andre Aciman, Herman Hesse, and Ted Chiang. I used to want to
-              be a <a href="https://letterboxd.com/rgaquino">film</a> critic but
-              have now learned to just sit down and enjoy them. My favorite
-              directors are Mike Leigh, Asghar Farhadi, Mike Mills, Andrew
-              Haigh, Marco Berger, and Sean Baker. Yes I am aware that's a lot
-              of white people.
+              Liu, Andre Aciman, Herman Hesse, and Ted Chiang. I'm aiming to have all my book notes
+              and highlights to be digitized and published here.
             </p>
             <p>
-              On my travels, I try to practice{' '}
-              <a href="https://instagram.com/rgaquino"> photography</a> hoping
-              that through the act of turning the camera away from myself I
-              learn to exalt the human condition. I also don't carry around a
-              tripod, so.
+              I also used to want to be a{' '}
+              <a href="https://letterboxd.com/rgaquino">film</a> critic but
+              later realized that I'd rather be immersed in them. Films from Mike
+              Leigh, Asghar Farhadi, Mike Mills, Edward Yang, Marco Berger, and
+              Sean Baker have been a huge influence in my life. So instead, I
+              try to practice{' '}
+              <a href="https://instagram.com/rgaquino"> photography</a> when I'm
+              travelling. I'm hoping that through the act of turning the camera
+              away from myself, like those films, I learn how to exalt the human
+              condition.
             </p>
             <p>
-              If you're interested in working with me, hit me up at
-              ralphgregoraquino@gmail.com or follow me on any of the links
-              below. But be warned, I will send memes.
+              If you're interested in working with me, send me a message or follow me on any of the links
+              below.
             </p>
             <p>
               <a href="https://github.com/rgaquino">GITHUB</a> //{' '}
