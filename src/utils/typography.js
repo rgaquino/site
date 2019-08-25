@@ -9,8 +9,6 @@ GrandView.overrideThemeStyles = () => {
   };
 };
 
-// delete Wordpress2016.googleFonts
-
 const typography = new Typography(GrandView);
 
 // Hot reload typography in development.
