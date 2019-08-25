@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-import { rhythm } from '../../utils/typography'
+import { rhythm } from '../../utils/typography';
 
 class Layout extends React.Component {
   render() {
-    const { children } = this.props
+    const { children } = this.props;
     return (
       <div
         style={{
@@ -17,8 +17,8 @@ class Layout extends React.Component {
         <main>{children}</main>
         <footer>© {new Date().getFullYear()} Ralph Gregor Aquino</footer>
       </div>
-    )
+    );
   }
 }
 
-export default Layout
+export default Layout;

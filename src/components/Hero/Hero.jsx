@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Link } from 'gatsby'
+import React, { Component } from 'react';
+import { Link } from 'gatsby';
 
 class Hero extends Component {
   render() {
@@ -10,8 +10,8 @@ class Hero extends Component {
         </Link>
         <p>Software Engineer based in Singapore</p>
       </div>
-    )
+    );
   }
 }
 
-export default Hero
+export default Hero;

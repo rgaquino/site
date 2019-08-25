@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-import { Link } from 'gatsby'
-import { rhythm } from '../../utils/typography'
+import { Link } from 'gatsby';
+import { rhythm } from '../../utils/typography';
 
 class BlogSummary extends Component {
   render() {
-    const { node } = this.props
-    const title = node.frontmatter.title || node.fields.slug
+    const { node } = this.props;
+    const title = node.frontmatter.title || node.fields.slug;
     return (
       <article key={node.fields.slug}>
         <header>
@@ -30,12 +30,12 @@ class BlogSummary extends Component {
           />
         </section>
       </article>
-    )
+    );
   }
 }
 
 BlogSummary.propTypes = {
   node: PropTypes.object.isRequired,
-}
+};
 
-export default BlogSummary
+export default BlogSummary;

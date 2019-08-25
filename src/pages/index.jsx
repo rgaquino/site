@@ -1,18 +1,18 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
-import ReactFullpage from '@fullpage/react-fullpage'
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import ReactFullpage from '@fullpage/react-fullpage';
 
-import SEO from '../components/SEO'
+import SEO from '../components/SEO';
 
-import '../css/styles.css'
+import '../css/styles.css';
 
 class Index extends React.Component {
   onLeave(origin, destination, direction) {
-    console.log('Leaving section ' + origin.index)
+    console.log('Leaving section ' + origin.index);
   }
 
   afterLoad(origin, destination, direction) {
-    console.log('After load: ' + destination.index)
+    console.log('After load: ' + destination.index);
   }
 
   render() {
@@ -85,14 +85,14 @@ class Index extends React.Component {
                 </p>
               </div>
             </ReactFullpage.Wrapper>
-          )
+          );
         }}
       />
-    )
+    );
   }
 }
 
-export default Index
+export default Index;
 
 export const pageQuery = graphql`
   query {
@@ -117,4 +117,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -1,6 +1,6 @@
-const path = require(`path`)
+const path = require(`path`);
 
-const TEMPLATE_PATH = `./src/templates/blog-post.jsx`
+const TEMPLATE_PATH = `./src/templates/blog-post.jsx`;
 const POST_QUERY = `
 {
     allMarkdownRemark(
@@ -19,22 +19,22 @@ const POST_QUERY = `
         }
     }
 }
-`
+`;
 
 module.exports = async ({ graphql, actions }) => {
-  const { createPage } = actions
-  const blogPost = path.resolve(TEMPLATE_PATH)
-  const result = await graphql(POST_QUERY)
+  const { createPage } = actions;
+  const blogPost = path.resolve(TEMPLATE_PATH);
+  const result = await graphql(POST_QUERY);
 
   if (result.errors) {
-    throw result.errors
+    throw result.errors;
   }
 
   // Create blog posts pages.
-  const posts = result.data.allMarkdownRemark.edges
+  const posts = result.data.allMarkdownRemark.edges;
   posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node
-    const next = index === 0 ? null : posts[index - 1].node
+    const previous = index === posts.length - 1 ? null : posts[index + 1].node;
+    const next = index === 0 ? null : posts[index - 1].node;
 
     createPage({
       path: post.node.fields.slug,
@@ -44,6 +44,6 @@ module.exports = async ({ graphql, actions }) => {
         previous,
         next,
       },
-    })
-  })
-}
+    });
+  });
+};

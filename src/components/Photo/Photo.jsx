@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import { Link } from 'gatsby'
+import React, { Component } from 'react';
+import { Link } from 'gatsby';
 
-import '../../css/styles.css'
+import '../../css/styles.css';
 
 class Photo extends Component {
   render() {
@@ -22,8 +22,8 @@ class Photo extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Photo
+export default Photo;
