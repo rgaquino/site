@@ -35,24 +35,25 @@ class Intro extends Component {
               <a href="https://trello.com/b/0SUpWrLd"> books</a> ranging from
               contemporary fiction, narrative non-fiction, and the occassional
               young adult novel. My favorite authors include Jack Kerouac, Cixin
-              Liu, Andre Aciman, Herman Hesse, and Ted Chiang. I'm aiming to have all my book notes
-              and highlights to be digitized and published here.
+              Liu, Andre Aciman, Herman Hesse, and Ted Chiang. I'm aiming to
+              have all of my book notes and highlights to be digitized and
+              published here.
             </p>
             <p>
               I also used to want to be a{' '}
               <a href="https://letterboxd.com/rgaquino">film</a> critic but
-              later realized that I'd rather be immersed in them. Films from Mike
-              Leigh, Asghar Farhadi, Mike Mills, Edward Yang, Marco Berger, and
-              Sean Baker have been a huge influence in my life. So instead, I
-              try to practice{' '}
+              later realized that I'd rather be immersed in them. Films from
+              Mike Leigh, Asghar Farhadi, Mike Mills, Edward Yang, Marco Berger,
+              and Sean Baker have influenced my life deeply. So instead, I try
+              to practice{' '}
               <a href="https://instagram.com/rgaquino"> photography</a> when I'm
               travelling. I'm hoping that through the act of turning the camera
               away from myself, like those films, I learn how to exalt the human
               condition.
             </p>
             <p>
-              If you're interested in working with me, send me a message or follow me on any of the links
-              below.
+              If you're interested in working with me, send me a message or
+              follow me on any of the links below.
             </p>
             <p>
               <a href="https://github.com/rgaquino">GITHUB</a> //{' '}
