@@ -19,13 +19,14 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby clean; gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.16",
     "gatsby": "^2.13.67",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-feed": "^2.3.6",
@@ -46,6 +47,7 @@
     "prismjs": "^1.17.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-grid-system": "^5.0.2",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
     "typeface-merriweather": "0.0.72",
