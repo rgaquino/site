@@ -6,6 +6,8 @@ description: "Frank Ocean's 2016 album Blonde interepreted as a modern day bildu
 disqusURL: "http://rgaquino.com/blog/2017/11/20/a-blonded-year.html"
 ---
 
+![Frank Ocean (Blonde)](./hero.jpg)
+
 Frank Ocean's 2016 album _Blonde_ is my most played album ever. According to my [Last.fm history](https://www.last.fm/user/aquinorg/library/albums) I have a cumulative track play of over 1,200. Divide that by 17 (the album has 17 tracks), that's equivalent to me playing the album approximately 65 times front to back over the course of a year. That's at least once every week. I’ve spent more time listening to _Blonde_ than hanging out with some of my closest and most cherished friends. I've cried to _Godspeed_ on train and Uber rides home, used _Self Control_ as a soundtrack for a myriad of emotions deliberate and not, and adapted the line "I'm not brave!" as a rallying cry rather than an admission of weakness.
 
 I started listening to Frank Ocean when I was a senior in college. The noise of the coming out story that surrounded the release of _channel ORANGE_ and its subsequent placement on top of multiple year-end lists made it impossible to be put down as just “okay” in fear of not being part of the zeitgeist. There’s no reason not to like _Thinking ‘Bout You_ even without the backstory, but the one-two punch of _Pyramids_ and _Bad Religion_ was a test of good taste. But as much as I wanted it to - or maybe I was still denying to know myself then - the album did not hit home.
