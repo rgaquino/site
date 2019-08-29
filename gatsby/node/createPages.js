@@ -18,8 +18,7 @@ const POST_QUERY = `
             }
         }
     }
-}
-`;
+}`;
 
 module.exports = async ({ graphql, actions }) => {
   const { createPage } = actions;
