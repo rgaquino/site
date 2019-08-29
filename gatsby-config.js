@@ -7,6 +7,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        whitelist: ["BASE_URL", "DISQUS_ID"]
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
