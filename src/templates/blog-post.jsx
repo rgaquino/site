@@ -14,9 +14,9 @@ class BlogPostTemplate extends React.Component {
     const { slug } = this.props.pageContext;
 
     // Disqus Configurations
-    const disqusShortname = 'rgaquino';
+    const disqusShortname = process.env.DISQUS_ID;
     const disqusConfig = {
-      url: post.frontmatter.disqusURL ? post.frontmatter.disqusURL : `https://rgaquino.com/blog${slug}`,
+      url: post.frontmatter.disqusURL ? post.frontmatter.disqusURL : `${process.env.BASE_URL}${slug}`,
       identifier: post.frontmatter.id,
       title: post.frontmatter.title,
     };
@@ -70,7 +70,7 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
+      excerpt(pruneLength: 160) 
       html
       frontmatter {
         id
