@@ -11,7 +11,7 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = this.props.data.site.siteMetadata.title;
-    const { slug } =  this.props.pageContext;
+    const { slug } = this.props.pageContext;
 
     // Disqus Configurations
     const disqusShortname = process.env.DISQUS_ID;
@@ -19,7 +19,7 @@ class BlogPostTemplate extends React.Component {
       url: post.frontmatter.disqusURL ? post.frontmatter.disqusURL : `${process.env.BASE_URL}${slug}`,
       identifier: post.frontmatter.id,
       title: post.frontmatter.title,
-    }
+    };
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -49,10 +49,10 @@ class BlogPostTemplate extends React.Component {
               {post.frontmatter.date}
             </p>
           </header>
-          <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <footer />
+          <section dangerouslySetInnerHTML={{ __html: post.html }}/>
+          <footer/>
         </article>
-        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig}/>
       </Layout>
     );
   }
