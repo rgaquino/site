@@ -5,6 +5,8 @@ date: "2019-08-29T22:12:03.284Z"
 description: "The Rocinante Project aims to create a personal command center for my digital life. Professionally, it aims to be a showcase of what I can do as a web developer and as an observation of what I can’t."
 ---
 
+![Rocinante](./hero.jpg)
+
 **The Rocinante Project** aims to create a personal command center for my digital life. I call it a command center to make is sound cool, but in essence it really is just an over-engineered profile page. Professionally, it aims to be a showcase of what I can do as a web developer and as an observation of what I can’t.
 
 ## Background and Objectives
@@ -38,38 +40,46 @@ The parent pod. It’s a static website that presents the different submodules�
 
 It’s my way to learn frontend development without going into too many details, that’s why I’m using Gatsby instead of creating it from scratch. It can also help me exercise graphics and UI/UX design since I’ve never done it professionally, only for publicity materials back when I was in university. If there’s an npm package for something that I want to do (e.g. I want the landing page to be scrolling full screen pages or I want a responsive grid using React components) I’d use it instead of building one myself.
 
-- Target Stack: Gatsby (React + GraphQL), Netlify
+**Target Stack**: Gatsby (React + GraphQL), Netlify
 
 ### [RL] rocinante-logs 
-A blog chronicling the development of the project. It also includes posts about my other interests as a way to put them all in one place. I don’t own social media accounts aside from Instagram so my thoughts can live here. It’s tightly coupled with  _rocinante-site_ for now unless I care to create it as its own Gatsby starter. It's the simplest of all the pods as it only requires markdown files and its accompanying assets to be uploaded automatically as they are dropped on a folder in a file hosting service (e.g. Dropbox).
+
+![rocinante-logs](./rocinante-logs.png)
+
+A blog chronicling the development of the project. It also includes posts about my other interests as a way to put them all in one place. I don’t own social media accounts aside from Instagram so my thoughts can live here. It’s tightly coupled with  _rocinante-site_ for now unless I care to create it as its own Gatsby starter. It's the simplest of all the pods as it only requires markdown files and the accompanying assets to be uploaded automatically after dropping them on a folder in a file hosting service (e.g. Dropbox).
 
 I also don’t know how to do technical writing. As a side effect of reading too much fiction, I use too many modifiers. You probably noticed that by reading this post. I’m a guy who joined a regional writing competition in high school with the task of profiling Manny Pacquiao and I ended up with a piece with two paragraphs about his sweat. I want to know how to write concise technical documents that are straight to the point (i.e. user manual not prose).
 
-- Target Stack: Gatsby (React + GraphQL), Netlify, Dropbox API
+**Target Stack**: Gatsby (React + GraphQL), Netlify, Dropbox API
 
 ### [RB] rocinante-books 
+
+![rocinante-books](./rocinante-books.png)
+
 This [Medium post by Sawyer Hollenshead](https://link.medium.com/HZTAXH6NuZ)  and [Nat Eliason’s published book notes](https://www.nateliason.com/notes) are really what inspired me to kick off the entire project. I wanted for myself a repository of all my book notes (both digital and by hand) that is easily searchable and mimics features of [Readwise](https://readwise.io).  I also just don’t like [Goodreads](https://goodreads.com).
 
 Copying Sawyer’s implementation, I aim to make this pod to be fully serverless and be persisted on a NoSQL database. I have no professional experience with a project with that structure but since I know that this is going to be my favorite submodule, I’m leveraging that drive to learn those that I’m not familiar with. To curb the frustration that will probably come up with not knowing a lot of the tech involved, I’ve decided that it will be hosted on AWS because I already use their services everyday for work.  The API should include a randomizer for my highlights to either send me an email/SMS and show it on _rocinante-site_ to help me remember what I’ve read.  Also like Sawyer’s, it will use a Natural Language Processing service (or maybe I’ll decide to build one myself to learn it) to analyze sentiments from my notes.
 
-- Target Stack: Amazon Web Services (such as DynamoDB, API Gateway, Lambda, Elasticsearch, Kinesis Data Streams), Google Books API, an undecided NLP service (or my own)
+**Target Stack**: Amazon Web Services (such as DynamoDB, API Gateway, Lambda, Elasticsearch, Kinesis Data Streams), Google Books API, an undecided NLP service (or my own)
 
 ### [RP] rocinante-photos
+
+![rocinante-photos](./rocinante-photos.png)
 
 In it’s simplest form this pod is a photography portfolio using high-resolution copies of my images. But in the background, I would want to be able to post a photo once and a backend service will make proper edits/compression that caters to the limits of where it is posting (e.g. Instagram’s rigid aspect ratio for portrait photos). It should also build the captions and tags correctly from the attached metadata before posting it on social media platforms.
 
 Since I’m assuming that this one has less services and would not be as complex as _rocinante-books_, this will be hosted on Google Cloud Platform to get an idea of how it works because I haven’t used it as extensively as AWS. The pod is to be written mostly in Python as a challenge for myself to master the language. The photos should be hosted on an Amazon S3-like service and accessed by _rocinante-site_ as URLs.
 
-- Target Stack: Google Cloud Platform equivalents of the  _rocinante-books_ stack, Instagram API
+**Target Stack**: Google Cloud Platform equivalents of the  _rocinante-books_ stack, Instagram API
 
 ### Other Pod Ideas
 
 1. **[RN] rocinante-notes** - I recently just finished Walter Isaacson’s biography of Leonardo Da Vinci and it has changed my life. Leonardo is widely known for the Mona Lisa and The Last Supper, but I believe that his greatest contribution to mankind are his notebooks. It shows how one person can have varying interests, see patterns that are common in them, and eventually enhance his craft using the understanding that ensues. Amazing as he was, he probably didn’t finish a lot of things like publishing concise summaries of his notebooks because he didn’t have a way to sift through the contents easily. Inspired by that conundrum, I want to make all of my notebooks be digital and be easily searchable. This is already done for me by Notability with its impressive OCR but I want it to be public in an attempt to a) take better notes; b) have it available for posterity and for constructive judgment; and c) I also want to learn what it takes to build precise OCR.
-2. **[RM] rocinante-music** - I want to mimic the now defunct [This Is My Jam](https://thisismyjam.com) because posting a song you like on Instagram is just too tacky and usually only done to project that you have better taste than your friends. I want the posting to be automatic. So if I listen to an Ariana Grande song five times, there’s nothing I can do because it will post it for me. It encourages me to be honest about what I like to listen to. It can even have elements from [Last.FM](https://last.fm), a service I’ve used for a while and eventually had to let go of because scrobbling from Apple Music corrupted my data.
-3. **[RK] rocinante-links** - A list of interesting links like what [Pocket](https://getpocket.com) shows as your profile.
+2. **[RM] rocinante-music** - I want to mimic the now defunct [This Is My Jam](https://thisismyjam.com) because posting a song you like on Instagram is just too tacky and usually only done to project that you have better taste than your friends. I want the posting to be automatic. So if I listen to an Ariana Grande song five times, there’s nothing I can do because it will post it for me. It encourages me to be honest about what I like to listen to. It can even have elements from [Last.FM](https://last.fm/user/aquinorg), a service I’ve used for a while and eventually had to let go of because scrobbling from Apple Music corrupted my data.
+3. **[RK] rocinante-links** - A list of interesting links like what [Pocket](https://getpocket.com/@patrickcollison) shows as your profile.
 4. **[RC] rocinante-comments** - To replace [Disqus](https://disqus.com) comment threads on _rocinante-logs_.
 
 ## Conclusions
 I hope that gives a high level overview of what I intend the project to look like. None of these are ironed out and the entire post is really just me trying to get it all out of my head and convincing myself that doing this would be better than spending my weekends watching Netflix. 
 
-I hope it also showed that both the technical design that is distributed by nature and its usage that leverages our inherent obsessions with ourselves, tries to reflect what I believe the internet is supposed to be: a celebration of our individuality linked by our common desire to connect. In the direction we’re going as a species it will be very easy to get lost in the speed. I wish that those who will see or use this project for themselves will be reminded that we are collectively stronger not in sameness, but when we build and offer a great contrast to each other.
+I hope it also showed that both the technical design that is distributed by nature and its usage that leverages our inherent obsessions with ourselves, tries to reflect what I believe the internet is supposed to be: a celebration of our individuality linked by our common desire to connect. In the direction we’re going as a species it will be very easy to get lost in the speed. I wish that those who will see or use this project for themselves will be reminded that we are collectively stronger not in sameness, but when we build and offer a great contrast to each other. 
