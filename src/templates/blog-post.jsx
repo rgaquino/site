@@ -16,7 +16,7 @@ class BlogPostTemplate extends React.Component {
     // Disqus Configurations
     const disqusShortname = process.env.DISQUS_ID;
     const disqusConfig = {
-      url: post.frontmatter.disqusURL ? post.frontmatter.disqusURL : `${process.env.HOST}/blog${slug}`,
+      url: post.frontmatter.disqusURL ? post.frontmatter.disqusURL : `${process.env.BASE_URL}${slug}`,
       identifier: post.frontmatter.id,
       title: post.frontmatter.title,
     }
