@@ -34,11 +34,11 @@ After submitting the CSR, it’s in the name that you’ve only sent a _request_
 
 ![HTTP-based DCV on Namecheap](./dcv-http.png)
 
-3. **DNS-based validation** - This involves fiddling with your DNS settings under **Domain List > Manage > Advanced DNS** by adding a CNAME and a CAA Record.  Here’s how you get the values to use to enter:
+3. **DNS-based validation** - This involves fiddling with your DNS settings under **Domain List > Manage > Advanced DNS** by adding a CNAME and a CAA Record.  Here’s how you get the values to enter:
 
 ![DNS-based DCV on Namecheap](./dcv-dns.png)
 
-After configuring any of these methods, you should force retry the DCV to let the certificate authority know that it’s ready.
+After configuring any of these methods, you should force retry the DCV to let the certificate authority know that your domain is ready.
 
 ![Force retry DCV on Namecheap](./dcv-retry.png)
 
