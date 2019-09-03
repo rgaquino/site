@@ -3,9 +3,8 @@ id: "how-to-validate-namecheap-ssl-certificates"
 title: "How To Validate SSL Certificates on Namecheap"
 date: "2019-09-01T15:00:00.00Z"
 description: "If you’re like me and you bought your custom domain from Namecheap years ago and never bothered to secure it with an SSL certificate then you will probably encounter this problem when you do try to buy one."
+hero: "./hero.jpg"
 ---
-
-![unsplash.com](./hero.jpg)
 
 > Note: If you intend to use Netlify (which I eventually did) to deploy your static website, you don’t need this. Netlify can provide a free SSL/TLS certificate via [Let’s Encrypt](https://letsencrypt.org) for your custom domain automatically.  
 
