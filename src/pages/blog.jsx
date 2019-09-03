@@ -17,16 +17,16 @@ class BlogIndex extends React.Component {
         <SEO title="Blog" />
         <Hero />
         {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug;
+          const title = node.frontmatter.title;
           return (
-            <article key={node.fields.slug}>
+            <article key={node.frontmatter.id}>
               <header>
                 <h3
                   style={{
                     marginBottom: rhythm(1 / 4),
                   }}
                 >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  <Link style={{ boxShadow: `none` }} to={`/blog/${node.frontmatter.id}`}>
                     {title}
                   </Link>
                 </h3>
@@ -60,10 +60,8 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt
-          fields {
-            slug
-          }
           frontmatter {
+            id
             date(formatString: "MMMM DD, YYYY")
             title
             description

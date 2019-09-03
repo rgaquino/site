@@ -14,6 +14,7 @@ const POST_QUERY = `
                 }
                 frontmatter {
                     title
+                    id
                 }
             }
         }
@@ -36,7 +37,7 @@ module.exports = async ({ graphql, actions }) => {
     const next = index === 0 ? null : posts[index - 1].node;
 
     createPage({
-      path: post.node.fields.slug,
+      path: `/blog/${post.node.frontmatter.id}`,
       component: blogPost,
       context: {
         slug: post.node.fields.slug,
