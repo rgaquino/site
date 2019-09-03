@@ -29,6 +29,7 @@ class BlogPostTemplate extends React.Component {
         />
         <article>
           <header>
+           
             <Link to="/blog">
               <h1
                 style={{
@@ -49,6 +50,7 @@ class BlogPostTemplate extends React.Component {
               {post.frontmatter.date}
             </p>
           </header>
+          <img src={post.frontmatter.hero.childImageSharp.original.src} />
           <section dangerouslySetInnerHTML={{ __html: post.html }}/>
           <footer/>
         </article>
@@ -78,6 +80,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         disqusURL
+        hero {
+          childImageSharp {
+            original {
+              src
+            }
+          }
+        }
       }
     }
   }

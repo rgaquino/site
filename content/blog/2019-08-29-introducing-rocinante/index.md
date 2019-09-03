@@ -3,9 +3,8 @@ id: "introducing-rocinante"
 title: "Introducing: The Rocinante Project"
 date: "2019-08-29T22:12:03.284Z"
 description: "The Rocinante Project aims to create a personal command center for my digital life. Professionally, it aims to be a showcase of what I can do as a web developer and as an observation of what I can’t."
+hero: "./hero.jpg"
 ---
-
-![Rocinante](./hero.jpg)
 
 **The Rocinante Project** aims to create a personal command center for my digital life. I call it a command center to make is sound cool, but in essence it really is just an over-engineered profile page. Professionally, it aims to be a showcase of what I can do as a web developer and as an observation of what I can’t.
 
