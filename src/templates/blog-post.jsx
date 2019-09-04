@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
+import BackgroundImage from 'gatsby-background-image';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -22,40 +23,47 @@ class BlogPostTemplate extends React.Component {
     };
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-        />
-        <article>
-          <header>
-           
-            <Link to="/blog">
-              <h1
+      <div>
+        <BackgroundImage
+          Tag="section"
+          fluid={post.frontmatter.hero.childImageSharp.fluid}
+          backgroundColor={`#040e18`}
+          style={{ height: "100vh" }}
+        >
+        </BackgroundImage>
+        <Layout location={this.props.location} title={siteTitle}>
+          <SEO
+            title={post.frontmatter.title}
+            description={post.frontmatter.description || post.excerpt}
+          />
+          <article>
+            <header>
+              <Link to="/blog">
+                <h1
+                  style={{
+                    marginTop: rhythm(1),
+                    marginBottom: 0,
+                  }}
+                >
+                  {post.frontmatter.title}
+                </h1>
+              </Link>
+              <p
                 style={{
-                  marginTop: rhythm(1),
-                  marginBottom: 0,
+                  ...scale(-1 / 5),
+                  display: `block`,
+                  marginBottom: rhythm(1),
                 }}
               >
-                {post.frontmatter.title}
-              </h1>
-            </Link>
-            <p
-              style={{
-                ...scale(-1 / 5),
-                display: `block`,
-                marginBottom: rhythm(1),
-              }}
-            >
-              {post.frontmatter.date}
-            </p>
-          </header>
-          <img src={post.frontmatter.hero.childImageSharp.original.src} />
-          <section dangerouslySetInnerHTML={{ __html: post.html }}/>
-          <footer/>
-        </article>
-        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig}/>
-      </Layout>
+                {post.frontmatter.date}
+              </p>
+            </header>
+            <section dangerouslySetInnerHTML={{ __html: post.html }}/>
+            <footer/>
+          </article>
+          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig}/>
+        </Layout>
+      </div>
     );
   }
 }
@@ -82,8 +90,8 @@ export const pageQuery = graphql`
         disqusURL
         hero {
           childImageSharp {
-            original {
-              src
+            fluid(quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
