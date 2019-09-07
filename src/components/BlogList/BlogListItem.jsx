@@ -5,7 +5,8 @@ import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 
 import { rhythm } from '../../utils/typography';
-import BlogDate from '../BlogDate';
+
+import LabelTag from '../LabelTag';
 
 class BlogListItem extends Component {
   render() {
@@ -26,7 +27,7 @@ class BlogListItem extends Component {
           </div>
         </Col>
         <Col lg={7}>
-          <BlogDate date={post.frontmatter.date} />
+          <LabelTag value={post.frontmatter.date} />
           <div
             style={{
               fontSize: '30px',

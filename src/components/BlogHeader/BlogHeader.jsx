@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-grid-system';
 
-import BlogDate from '../BlogDate';
+import LabelTag from '../LabelTag';
 import { rhythm } from '../../utils/typography';
 
 class BlogHeader extends Component {
@@ -13,7 +13,7 @@ class BlogHeader extends Component {
       <Container>
         <Row>
           <Col lg={12}>
-            <BlogDate date={post.frontmatter.date} />
+            <LabelTag value={post.frontmatter.date} />
             <div
               style={{
                 fontSize: '60px',

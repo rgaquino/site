@@ -49,9 +49,7 @@ class Index extends React.Component {
                   justifyContent: 'center',
                 }}
               >
-                <a href="#content">
-                  <div className="arrow" />
-                </a>
+                <div className="arrow" />
               </Col>
             </Row>
           </Container>
@@ -220,12 +218,12 @@ class Index extends React.Component {
                     >
                       <LabelTag value="Latest Photo"></LabelTag>
                       <div style={{ fontSize: '25px' }}>
-                        <em>"fish as deep down as possible"</em>
+                        <em>"fish as deep down as possible — understand"</em>
                       </div>
                       <div style={{ paddingTop: rhythm(1 / 2) }}>
-                        <strong>SYDNEY, AUSTRALIA</strong>
+                        <strong>SYDNEY, AUSTRALIA (August 2019)</strong>
                         <p>
-                          <em>August 2019</em>
+                          <em>Sony a6000 / Sigma 3.5mm f1.4 DC DN</em>
                         </p>
                       </div>
                     </div>
