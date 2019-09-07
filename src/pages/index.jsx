@@ -52,7 +52,7 @@ class Index extends React.Component {
             <Col lg={12}>
               <Container>
                 <Row>
-                  <Col lg={10} offset={{ lg: 1 }}>
+                  <Col lg={12}>
                     <div style={{ textAlign: 'center' }}>
                       <Link to="/blog">
                         <span style={{ fontSize: '40px' }}>
@@ -100,8 +100,8 @@ class Index extends React.Component {
             <Col lg={12}>
               <Container>
                 <Row>
-                  <Col lg={6} offset={{ lg: 1 }}>
-                    <div style={{ textAlign: 'left' }}>
+                  <Col lg={8}>
+                    <div style={{ textAlign: 'left'}}>
                       <Link to="/books">
                         <span style={{ fontSize: '40px' }}>
                           <strong>BOOKS</strong>
@@ -118,12 +118,12 @@ class Index extends React.Component {
                         published here.
                       </p>
                     </div>
-                    <div style={{ textAlign: 'center', paddingTop: rhythm(1) }}>
+                    <div style={{ textAlign: 'center', paddingTop: rhythm(1) }}>  
                       <LabelTag value="Latest Highlight"></LabelTag>
                       <div
                         style={{
                           fontSize: '25px',
-                          paddingBottom: rhythm(1 / 2),
+                          paddingBottom: rhythm(1),
                         }}
                       >
                         <em>
@@ -131,7 +131,7 @@ class Index extends React.Component {
                           a story we tell ourselves."
                         </em>
                       </div>
-                      <div style={{ paddingTop: rhythm(1 / 2) }}>
+                      <div>
                         <strong>COMMONWEALTH</strong>
                         <p>
                           <em>by Ann Pachett</em>
@@ -140,7 +140,12 @@ class Index extends React.Component {
                     </div>
                   </Col>
                   <Col lg={4}>
-                    <div style={{ textAlign: 'center' }}>
+                    <div style={{ 
+                        textAlign: 'center',           
+                        display: 'flex',
+                        justifyContent: 'center',
+                        flexDirection: 'column', 
+                        height: '100%'}}>
                       <Image
                         fluid={data.sampleBook.childImageSharp.fluid}
                       ></Image>
@@ -148,7 +153,7 @@ class Index extends React.Component {
                   </Col>
                 </Row>
                 <Row style={{ paddingTop: rhythm(1) }}>
-                  <Col lg={10} offset={{ lg: 1 }}>
+                  <Col lg={12}>
                     <div style={{ textAlign: 'center' }}>
                       <Link to="/books">
                         <strong>[ view more books ]</strong>
@@ -168,7 +173,7 @@ class Index extends React.Component {
             <Col lg={12}>
               <Container>
                 <Row>
-                  <Col lg={10} offset={{ lg: 1 }}>
+                  <Col lg={12}>
                     <div style={{ textAlign: 'center' }}>
                       <Link to="/photos">
                         <span style={{ fontSize: '40px' }}>
@@ -223,7 +228,7 @@ class Index extends React.Component {
                   </Col>
                 </Row>
                 <Row style={{ paddingTop: rhythm(1 / 2) }}>
-                  <Col lg={10} offset={{ lg: 1 }}>
+                  <Col lg={12}>
                     <div style={{ textAlign: 'center' }}>
                       <Link to="/photos">
                         <strong>[ view more photos ]</strong>
