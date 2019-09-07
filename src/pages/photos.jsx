@@ -9,21 +9,25 @@ class PhotosIndex extends React.Component {
       <div>
         <SEO title="Photos" />
         <FullScreenLayout style={{ lineHeight: 1.125 }}>
-           <div style={{
-                fontSize: '150px',
-                textAlign: 'center',
-              }}
-            >
-              <strong>PHOTOS</strong>
+          <div
+            style={{
+              fontSize: '150px',
+              textAlign: 'center',
+            }}
+          >
+            <strong>PHOTOS</strong>
           </div>
-          <div style={{
+          <div
+            style={{
               fontSize: '50px',
               textAlign: 'center',
             }}
           >
-              <p>Coming soon. Meanwhile, browse my <a href='https://instagram.com/rgaquino'>Instagram.</a></p>
+            <p>
+              Coming soon. Meanwhile, browse my{' '}
+              <a href="https://instagram.com/rgaquino">Instagram.</a>
+            </p>
           </div>
- 
         </FullScreenLayout>
       </div>
     );

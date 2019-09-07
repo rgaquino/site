@@ -10,21 +10,25 @@ class BooksIndex extends React.Component {
       <div>
         <SEO title="Books" />
         <FullScreenLayout style={{ lineHeight: 1.125 }}>
-           <div style={{
-                fontSize: '150px',
-                textAlign: 'center',
-              }}
-            >
-              <strong>BOOKS</strong>
+          <div
+            style={{
+              fontSize: '150px',
+              textAlign: 'center',
+            }}
+          >
+            <strong>BOOKS</strong>
           </div>
-          <div style={{
+          <div
+            style={{
               fontSize: '50px',
               textAlign: 'center',
             }}
           >
-              <p>Coming soon. Meanwhile, browse my <a href='https://trello.com/b/0SUpWrLd'>reading list.</a></p>
+            <p>
+              Coming soon. Meanwhile, browse my{' '}
+              <a href="https://trello.com/b/0SUpWrLd">reading list.</a>
+            </p>
           </div>
- 
         </FullScreenLayout>
       </div>
     );
