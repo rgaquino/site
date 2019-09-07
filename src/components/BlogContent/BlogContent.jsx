@@ -20,14 +20,14 @@ class BlogContent extends Component {
     return (
       <Container style={style}>
         <Row>
-          <Col md={10} offset={{ md: 1 }}>
+          <Col lg={10} offset={{ lg: 1 }}>
             <article>
               <section dangerouslySetInnerHTML={{ __html: post.html }} />
             </article>
           </Col>
         </Row>
         <Row>
-          <Col md={10} offset={{ md: 1 }}>
+          <Col lg={10} offset={{ lg: 1 }}>
             <DiscussionEmbed
               shortname={disqusShortname}
               config={disqusConfig}

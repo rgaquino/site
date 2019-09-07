@@ -10,7 +10,7 @@ class Layout extends React.Component {
     return (
       <Container>
         <Row>
-          <Col md={12}>
+          <Col lg={12}>
             <main>{children}</main>
             <footer style={{ textAlign: 'center', marginTop: rhythm(2) }}>
               © {new Date().getFullYear()} Ralph Gregor Aquino

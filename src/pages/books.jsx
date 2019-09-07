@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import SEO from '../components/SEO';
 import FullScreenLayout from '../components/FullScreenLayout';
+import Footer from '../components/Footer';
 
 class BooksIndex extends React.Component {
   render() {
@@ -16,7 +18,9 @@ class BooksIndex extends React.Component {
               textAlign: 'center',
             }}
           >
-            <strong>BOOKS</strong>
+            <Link to="/">
+              <strong>BOOKS</strong>
+            </Link>
           </div>
           <div
             style={{

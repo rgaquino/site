@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import SEO from '../components/SEO';
 import FullScreenLayout from '../components/FullScreenLayout';
@@ -15,7 +16,9 @@ class PhotosIndex extends React.Component {
               textAlign: 'center',
             }}
           >
-            <strong>PHOTOS</strong>
+            <Link to="/">
+              <strong>PHOTOS</strong>
+            </Link>
           </div>
           <div
             style={{
@@ -24,7 +27,7 @@ class PhotosIndex extends React.Component {
             }}
           >
             <p>
-              Coming soon. Meanwhile, browse my{' '}
+              Coming soon. Meanwhile, follow me on{' '}
               <a href="https://instagram.com/rgaquino">Instagram.</a>
             </p>
           </div>

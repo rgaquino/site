@@ -49,7 +49,7 @@ class Index extends React.Component {
         </FullScreenLayout>
         <Container>
           <Row style={{ paddingTop: rhythm(2) }}>
-            <Col lg={10} offset={{ md: 1 }}>
+            <Col lg={10} offset={{ lg: 1 }}>
               <div style={{ textAlign: 'center' }}>
                 <Link to="/blog">
                   <span style={{ fontSize: '40px' }}>
@@ -90,8 +90,8 @@ class Index extends React.Component {
             <Col lg={12}>
               <Container>
                 <Row>
-                  <Col lg={6} offset={{ md: 1 }}>
-                    <div style={{ textAlign: 'right' }}>
+                  <Col lg={6} offset={{ lg: 1 }}>
+                    <div style={{ textAlign: 'center' }}>
                       <Link to="/books">
                         <span style={{ fontSize: '40px' }}>
                           <strong>BOOKS</strong>
@@ -108,7 +108,7 @@ class Index extends React.Component {
                         published here.
                       </p>
                     </div>
-                    <div style={{ textAlign: 'right', paddingTop: rhythm(1) }}>
+                    <div style={{ textAlign: 'center', paddingTop: rhythm(1) }}>
                       <LabelTag value="Last Book Read"></LabelTag>
                       <div
                         style={{
@@ -138,7 +138,7 @@ class Index extends React.Component {
                   </Col>
                 </Row>
                 <Row style={{ paddingTop: rhythm(1) }}>
-                  <Col lg={10} offset={{ md: 1 }}>
+                  <Col lg={10} offset={{ lg: 1 }}>
                     <div style={{ textAlign: 'center' }}>
                       <Link to="/books">
                         <strong>[ view more books ]</strong>
@@ -158,17 +158,8 @@ class Index extends React.Component {
             <Col lg={12}>
               <Container>
                 <Row>
-                  <Col lg={4} offset={{ md: 1 }}>
-                    <div
-                      style={{ textAlign: 'center', paddingBottom: rhythm(1) }}
-                    >
-                      <Image
-                        fluid={data.samplePhoto.childImageSharp.fluid}
-                      ></Image>
-                    </div>
-                  </Col>
-                  <Col lg={6}>
-                    <div style={{ textAlign: 'left' }}>
+                  <Col lg={10} offset={{ lg: 1 }}>
+                    <div style={{ textAlign: 'center' }}>
                       <Link to="/photos">
                         <span style={{ fontSize: '40px' }}>
                           <strong>PHOTOS</strong>
@@ -190,8 +181,23 @@ class Index extends React.Component {
                         learn how to exalt the human condition.
                       </p>
                     </div>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col lg={6} offset={{ lg: 3 }}>
                     <div
-                      style={{ textAlign: 'left', paddingTop: rhythm(1 / 2) }}
+                      style={{ textAlign: 'center', paddingBottom: rhythm(1) }}
+                    >
+                      <Image
+                        fluid={data.samplePhoto.childImageSharp.fluid}
+                      ></Image>
+                    </div>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col lg={10} offset={{ lg: 1 }}>
+                    <div
+                      style={{ textAlign: 'center', paddingTop: rhythm(1 / 2) }}
                     >
                       <LabelTag value="Latest Photo"></LabelTag>
                       <div style={{ fontSize: '25px' }}>
@@ -207,7 +213,7 @@ class Index extends React.Component {
                   </Col>
                 </Row>
                 <Row style={{ paddingTop: rhythm(1 / 2) }}>
-                  <Col lg={10} offset={{ md: 1 }}>
+                  <Col lg={10} offset={{ lg: 1 }}>
                     <div style={{ textAlign: 'center' }}>
                       <Link to="/photos">
                         <strong>[ view more photos ]</strong>
@@ -224,7 +230,7 @@ class Index extends React.Component {
             </Col>
           </Row>
           <Row style={{ paddingTop: rhythm(2) }}>
-            <Col lg={10} offset={{ md: 1 }}>
+            <Col lg={10} offset={{ lg: 1 }}>
               <div style={{ textAlign: 'center' }}>
                 <p>
                   I'm aiming to have all of my socials to be aggregated and

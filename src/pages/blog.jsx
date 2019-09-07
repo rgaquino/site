@@ -15,7 +15,7 @@ class BlogIndex extends React.Component {
         <SEO title="Blog" />
         <Container>
           <Row>
-            <Col md={12} style={{ textAlign: 'center' }}>
+            <Col lg={12} style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '150px' }}>
                 <Link to="/">
                   <strong>BLOG</strong>

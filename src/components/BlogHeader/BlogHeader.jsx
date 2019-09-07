@@ -12,7 +12,7 @@ class BlogHeader extends Component {
     return (
       <Container>
         <Row>
-          <Col md={12}>
+          <Col lg={12}>
             <BlogDate date={post.frontmatter.date} />
             <div
               style={{
