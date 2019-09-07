@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'gatsby';
-
-import '../../css/styles.css';
 
 class Photo extends Component {
   render() {

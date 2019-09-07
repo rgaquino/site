@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-grid-system';
 
-import '../../css/styles.css';
-
 class Intro extends Component {
   render() {
     return (
       <Container>
         <Row>
-          <Col md={10} offset={{ md: 1 }}>
+          <Col md={4}>
+          </Col>
+          <Col md={8}>
             <Link to="/">
               <h1 className="highlight">Hi, I'm RG.</h1>
             </Link>

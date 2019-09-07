@@ -18,7 +18,7 @@ class BlogIndex extends React.Component {
             <Col md={12}>
               <div
                 style={{
-                  fontSize: '200px',
+                  fontSize: '150px',
                   textAlign: 'center',
                 }}
               >
