@@ -8,9 +8,7 @@ class BlogList extends Component {
     return (
       <Fragment>
         {this.props.posts.map(({ node }) => {
-          return (
-            <BlogListItem key={node.frontmatter.id} post={node}/>
-          );
+          return <BlogListItem key={node.frontmatter.id} post={node} />;
         })}
       </Fragment>
     );
@@ -19,6 +17,6 @@ class BlogList extends Component {
 
 BlogListItem.propTypes = {
   posts: PropTypes.object.isRequired,
-}
+};
 
 export default BlogList;

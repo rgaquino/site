@@ -22,13 +22,16 @@ class Intro extends Component {
             <p>
               I'm using this website as a command center for my digital life and
               as a way to learn new tech as they come. I'm calling it{' '}
-              <Link to="/blog/introducing-rocinante"><strong>The Rocinante Project</strong></Link>, with the end goal of
-              having expertise on multiple web development stacks and not get
-              overwhelmed by how much there is to learn. I'm{' '}
-              <Link to="/blog">blogging</Link> about the steps of building this
-              website from design to implementation to both track my progress
-              and as a way for others to learn from them. I believe in the value
-              of not erasing our own learning arc by never feigning perfection.
+              <Link to="/blog/introducing-rocinante">
+                <strong>The Rocinante Project</strong>
+              </Link>
+              , with the end goal of having expertise on multiple web
+              development stacks and not get overwhelmed by how much there is to
+              learn. I'm <Link to="/blog">blogging</Link> about the steps of
+              building this website from design to implementation to both track
+              my progress and as a way for others to learn from them. I believe
+              in the value of not erasing our own learning arc by never feigning
+              perfection.
             </p>
             <p>
               On my free time, I read a ton of{' '}

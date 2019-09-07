@@ -14,30 +14,40 @@ class BlogHeader extends Component {
         <Row>
           <Col md={12}>
             <BlogDate date={post.frontmatter.date} />
-            <div style= {{
-                fontSize: "60px",
-                color: "#fff",
+            <div
+              style={{
+                fontSize: '60px',
+                color: '#fff',
                 lineHeight: 1.25,
-                paddingBottom: rhythm(3/4),
-            }}>
-              <Link to="/blog" style={{ 
-                backgroundColor: "#fff", 
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                paddingBottom: "3px",
-                paddingTop: "3px",
-                boxDecorationBreak: "clone", 
-                WebkitBoxDecorationBreak: "clone",
-              }}>
-                  <strong>{post.frontmatter.title}</strong>                        
-              </Link>
-            </div>
-            <div style= {{
-                color: "#fff",
-                fontSize: "20px"
+                paddingBottom: rhythm(3 / 4),
               }}
             >
-              <p dangerouslySetInnerHTML={{__html: post.frontmatter.description }}/>
+              <Link
+                to="/blog"
+                style={{
+                  backgroundColor: '#fff',
+                  paddingLeft: '10px',
+                  paddingRight: '10px',
+                  paddingBottom: '3px',
+                  paddingTop: '3px',
+                  boxDecorationBreak: 'clone',
+                  WebkitBoxDecorationBreak: 'clone',
+                }}
+              >
+                <strong>{post.frontmatter.title}</strong>
+              </Link>
+            </div>
+            <div
+              style={{
+                color: '#fff',
+                fontSize: '20px',
+              }}
+            >
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: post.frontmatter.description,
+                }}
+              />
             </div>
           </Col>
         </Row>
@@ -48,6 +58,6 @@ class BlogHeader extends Component {
 
 BlogHeader.propTypes = {
   post: PropTypes.object.isRequired,
-}
+};
 
 export default BlogHeader;

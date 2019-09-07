@@ -11,19 +11,20 @@ import Intro from '../components/Intro';
 
 class Index extends React.Component {
   render() {
-
     const { data } = this.props;
     const siteTitle = data.site.siteMetadata.title;
     const posts = data.allMarkdownRemark.edges;
 
     return (
       <>
-        <div style={{
-          height: "100vh",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-        }}>
+        <div
+          style={{
+            height: '100vh',
+            display: 'flex',
+            justifyContent: 'center',
+            flexDirection: 'column',
+          }}
+        >
           <SEO />
 
           <Intro />
@@ -59,7 +60,6 @@ export default Index;
 //     }
 //   }
 // `;
-
 
 export const pageQuery = graphql`
   query {

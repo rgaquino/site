@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-env-variables`,
       options: {
-        whitelist: ["BASE_URL", "DISQUS_ID"]
+        whitelist: ['BASE_URL', 'DISQUS_ID'],
       },
     },
     {

@@ -1,9 +1,9 @@
 ---
-id: "finding-dory"
-title: "Finding Dory reminds us to cherish differences, in a world where hate seems easier"
-date: "2016-06-18T22:12:03.284Z"
+id: 'finding-dory'
+title: 'Finding Dory reminds us to cherish differences, in a world where hate seems easier'
+date: '2016-06-18T22:12:03.284Z'
 description: "Pixar’s best non-<em>Toy Story</em> sequel to date builds on and transcends the original's themes by exploring what it means to be included."
-hero: "./hero.jpg"
+hero: './hero.jpg'
 ---
 
 Every Pixar franchise has an underlying theme that goes beyond what we initially think it will be about. As much as we like the idea of our toys coming to life when we’re not in our bedrooms, _Toy Story_ showed us our own Holden Caulfield-esque fear of growing up. _WALL-E_, a film about a semi-sentient janitor robot literally cleaning up the mess that people made on Earth, proved that our laziness _does_ drive innovation but warned us that embracing it instead of looking for healthier sources of inspiration will be our demise. All of Pixar’s films are billed as family-friendly entertainment, but the two that tackled family in the most direct sense are _The Incredibles_ and _Finding Nemo_. The former implied that the uniqueness of each family member can be harnessed to build stronger ties, while the latter, quite surprisingly, acts as a modern day guide to parenting.

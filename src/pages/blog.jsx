@@ -10,22 +10,23 @@ import BlogList from '../components/BlogList';
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
-    const siteTitle = data.site.siteMetadata.title;
     return (
       <div>
         <SEO title="Blog" />
         <Container>
           <Row>
             <Col md={12}>
-              <div style={{
+              <div
+                style={{
                   fontSize: '200px',
-                  textAlign: "center"
-                }}>
-                  <strong>BLOG</strong>                       
+                  textAlign: 'center',
+                }}
+              >
+                <strong>BLOG</strong>
               </div>
             </Col>
           </Row>
-          <BlogList posts= {data.allMarkdownRemark.edges} />
+          <BlogList posts={data.allMarkdownRemark.edges} />
         </Container>
         <Footer />
       </div>

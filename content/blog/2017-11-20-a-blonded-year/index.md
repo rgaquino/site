@@ -1,10 +1,10 @@
 ---
-id: "a-blonded-year"
-title: "A Blonded Year"
-date: "2017-11-20T22:12:03.284Z"
+id: 'a-blonded-year'
+title: 'A Blonded Year'
+date: '2017-11-20T22:12:03.284Z'
 description: "Frank Ocean's 2016 album <em>Blonde</em> interepreted as a modern day bildungsroman."
-disqusURL: "http://rgaquino.com/blog/2017/11/20/a-blonded-year.html"
-hero: "./hero.jpg"
+disqusURL: 'http://rgaquino.com/blog/2017/11/20/a-blonded-year.html'
+hero: './hero.jpg'
 ---
 
 Frank Ocean's 2016 album _Blonde_ is my most played album ever. According to my [Last.fm history](https://www.last.fm/user/aquinorg/library/albums) I have a cumulative track play of over 1,200. Divide that by 17 (the album has 17 tracks), that's equivalent to me playing the album approximately 65 times front to back over the course of a year. That's at least once every week. I’ve spent more time listening to _Blonde_ than hanging out with some of my closest and most cherished friends. I've cried to _Godspeed_ on train and Uber rides home, used _Self Control_ as a soundtrack for a myriad of emotions deliberate and not, and adapted the line "I'm not brave!" as a rallying cry rather than an admission of weakness.

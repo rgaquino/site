@@ -12,7 +12,9 @@ class Layout extends React.Component {
         <Row>
           <Col md={12}>
             <main>{children}</main>
-            <footer style={{ textAlign: "center", marginTop: rhythm(2)}}>© {new Date().getFullYear()} Ralph Gregor Aquino</footer>
+            <footer style={{ textAlign: 'center', marginTop: rhythm(2) }}>
+              © {new Date().getFullYear()} Ralph Gregor Aquino
+            </footer>
           </Col>
         </Row>
       </Container>
