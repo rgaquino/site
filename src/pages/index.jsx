@@ -10,15 +10,20 @@ import Footer from '../components/Footer';
 import LabelTag from '../components/LabelTag';
 
 import { rhythm } from '../utils/typography';
+import '../css/global.css';
 
 class Index extends React.Component {
   render() {
     const { data } = this.props;
     return (
-      <div>
+      <div style={{ scrollBehavior: 'smooth' }}>
         <SEO />
         <FullScreenLayout
-          style={{ textAlign: 'center', backgroundColor: '#D6D6D6' }}
+          style={{
+            textAlign: 'center',
+            backgroundColor: '#1F3551',
+            color: '#fff',
+          }}
         >
           <Container>
             <Row>
@@ -33,52 +38,66 @@ class Index extends React.Component {
                   write mostly in Go and JavaScript, but I previously worked on
                   financial web applications mainly using Java.
                 </p>
-                <p>
-                  If you're interested in working with me, send me a message or
-                  follow me on any of the links below.
-                </p>
-                <p>
-                  <a href="https://github.com/rgaquino">GITHUB</a> //{' '}
-                  <a href="https://linkedin.com/in/rgaquino">LINKEDIN</a> //{' '}
-                  <a href="https://instagram.com/rgaquino">INSTAGRAM</a> //{' '}
-                  <a href="https://letterboxd.com/rgaquino">LETTERBOXD</a>
-                </p>
+              </Col>
+            </Row>
+            <Row>
+              <Col
+                lg={12}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                <a href="#content">
+                  <div className="arrow" />
+                </a>
               </Col>
             </Row>
           </Container>
         </FullScreenLayout>
-        <Container>
+        <Container id="content">
           <Row style={{ paddingTop: rhythm(2) }}>
-            <Col lg={10} offset={{ lg: 1 }}>
-              <div style={{ textAlign: 'center' }}>
-                <Link to="/blog">
-                  <span style={{ fontSize: '40px' }}>
-                    <strong>BLOG</strong>
-                  </span>
-                </Link>
-                <p>
-                  I'm using this website as a command center for my digital life
-                  and as a way to learn new tech as they come. I'm calling it{' '}
-                  <Link to="/blog/introducing-rocinante">
-                    <strong>The Rocinante Project</strong>
-                  </Link>
-                  , with the end goal of having expertise on multiple web
-                  development stacks and not get overwhelmed by how much there
-                  is to learn. I'm <Link to="/blog">blogging</Link> about the
-                  steps of building this website from design to implementation
-                  to both track my progress and as a way for others to learn
-                  from them. I believe in the value of not erasing our own
-                  learning arc by never feigning perfection.
-                </p>
-              </div>
-              <div>
-                <BlogList posts={data.allMarkdownRemark.edges} />
-              </div>
-              <div style={{ textAlign: 'center', paddingBottom: rhythm(2) }}>
-                <Link to="/blog">
-                  <strong>[ view more posts ]</strong>
-                </Link>
-              </div>
+            <Col lg={12}>
+              <Container>
+                <Row>
+                  <Col lg={10} offset={{ lg: 1 }}>
+                    <div style={{ textAlign: 'left' }}>
+                      <Link to="/blog">
+                        <span style={{ fontSize: '40px' }}>
+                          <strong>BLOG</strong>
+                        </span>
+                      </Link>
+                      <p>
+                        I'm using this website as a command center for my
+                        digital life and as a way to learn new tech as they
+                        come. I'm calling it{' '}
+                        <Link to="/blog/introducing-rocinante">
+                          <strong>The Rocinante Project</strong>
+                        </Link>
+                        , with the end goal of having expertise on multiple web
+                        development stacks and not get overwhelmed by how much
+                        there is to learn. I'm <Link to="/blog">blogging</Link>{' '}
+                        about the steps of building this website from design to
+                        implementation to both track my progress and as a way
+                        for others to learn from them. I believe in the value of
+                        not erasing our own learning arc by never feigning
+                        perfection.
+                      </p>
+                    </div>
+                    <div>
+                      <BlogList posts={data.allMarkdownRemark.edges} />
+                    </div>
+                    <div
+                      style={{ textAlign: 'center', paddingBottom: rhythm(2) }}
+                    >
+                      <Link to="/blog">
+                        <strong>[ view more posts ]</strong>
+                      </Link>
+                    </div>
+                  </Col>
+                </Row>
+              </Container>
             </Col>
           </Row>
           <Row>
@@ -91,7 +110,7 @@ class Index extends React.Component {
               <Container>
                 <Row>
                   <Col lg={6} offset={{ lg: 1 }}>
-                    <div style={{ textAlign: 'center' }}>
+                    <div style={{ textAlign: 'left' }}>
                       <Link to="/books">
                         <span style={{ fontSize: '40px' }}>
                           <strong>BOOKS</strong>
@@ -109,7 +128,7 @@ class Index extends React.Component {
                       </p>
                     </div>
                     <div style={{ textAlign: 'center', paddingTop: rhythm(1) }}>
-                      <LabelTag value="Last Book Read"></LabelTag>
+                      <LabelTag value="Latest Highlight"></LabelTag>
                       <div
                         style={{
                           fontSize: '25px',
@@ -237,7 +256,8 @@ class Index extends React.Component {
                   displayed on this website. It is currently on active
                   development and you can find the source code{' '}
                   <a href="https://github.com/rgaquino/site">here</a>. For the
-                  meantime, you can reach me on any of the links below.
+                  meantime, if you're interested in working with me, send me a
+                  message or follow me on any of the links below.
                 </p>
               </div>
             </Col>
