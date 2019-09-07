@@ -12,7 +12,7 @@ class PhotosIndex extends React.Component {
         <FullScreenLayout style={{ lineHeight: 1.125 }}>
           <div
             style={{
-              fontSize: '150px',
+              fontSize: '75px',
               textAlign: 'center',
             }}
           >
@@ -22,7 +22,6 @@ class PhotosIndex extends React.Component {
           </div>
           <div
             style={{
-              fontSize: '50px',
               textAlign: 'center',
             }}
           >

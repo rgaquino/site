@@ -6,6 +6,7 @@ import { Container, Row, Col } from 'react-grid-system';
 
 import Footer from '../components/Footer';
 import BlogList from '../components/BlogList';
+import Navbar from '../components/Navbar';
 
 class BlogIndex extends React.Component {
   render() {
@@ -15,11 +16,14 @@ class BlogIndex extends React.Component {
         <SEO title="Blog" />
         <Container>
           <Row>
+            <Col lg={12} >
+              <Navbar />
+            </Col>
+          </Row>
+          <Row>
             <Col lg={12} style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '150px' }}>
-                <Link to="/">
+              <div style={{ fontSize: '8em' }}>
                   <strong>BLOG</strong>
-                </Link>
               </div>
               <p>
                 I'm using this website as a command center for my digital life

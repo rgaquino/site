@@ -21,22 +21,22 @@ class Index extends React.Component {
         <FullScreenLayout
           style={{
             textAlign: 'center',
-            backgroundColor: '#1F3551',
+            backgroundColor: '#242424',
             color: '#fff',
           }}
         >
           <Container>
             <Row>
               <Col lg={12}>
-                <div style={{ fontSize: '125px'}}>
+                <div style={{ fontSize: '8em'}}>
                   <strong>Hi, I'm RG.</strong>
                 </div>
                 <p style={{ fontSize: '20px' }}>
                   I'm a Software Engineer based in Singapore currently writing
                     backend code for{' '}
-                    <a href="https://github.com/eatigo">@eatigo</a>. Nowadays I
-                    write mostly in <strong>Go</strong> and <strong>JavaScript</strong>. Previously, I worked on
-                    financial web applications built using <strong>Java</strong>.
+                    <a href="https://github.com/eatigo"><strong>Eatigo</strong></a>. Nowadays I
+                    write mostly in Go and JavaScript. Previously, I worked on
+                    financial web applications built using Java.
                 </p>
               </Col>
             </Row>
