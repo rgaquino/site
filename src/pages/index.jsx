@@ -91,7 +91,7 @@ class Index extends React.Component {
               <Container>
                 <Row>
                   <Col lg={6} offset={{ md: 1 }}>
-                    <div style={{ textAlign: 'center' }}>
+                    <div style={{ textAlign: 'right' }}>
                       <Link to="/books">
                         <span style={{ fontSize: '40px' }}>
                           <strong>BOOKS</strong>
@@ -168,7 +168,7 @@ class Index extends React.Component {
                     </div>
                   </Col>
                   <Col lg={6}>
-                    <div style={{ textAlign: 'center' }}>
+                    <div style={{ textAlign: 'left' }}>
                       <Link to="/photos">
                         <span style={{ fontSize: '40px' }}>
                           <strong>PHOTOS</strong>

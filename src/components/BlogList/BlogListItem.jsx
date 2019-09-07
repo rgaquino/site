@@ -12,7 +12,7 @@ class BlogListItem extends Component {
     const post = this.props.post;
     return (
       <Row style={{ paddingTop: rhythm(2) }}>
-        <Col md={5}>
+        <Col lg={5}>
           <div
             style={{
               display: 'flex',
@@ -25,7 +25,7 @@ class BlogListItem extends Component {
             <Image fluid={post.frontmatter.hero.childImageSharp.fluid} />
           </div>
         </Col>
-        <Col md={7}>
+        <Col lg={7}>
           <BlogDate date={post.frontmatter.date} />
           <div
             style={{
