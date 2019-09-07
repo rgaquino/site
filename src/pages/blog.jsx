@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import Intro from '../components/Intro';
-
 import SEO from '../components/SEO';
 import { rhythm } from '../utils/typography';
-import BackgroundImage from 'gatsby-background-image';
 import { Container, Row, Col } from 'react-grid-system';
 import Image from 'gatsby-image';
+import Footer from '../components/Footer/Footer';
 
 
 class BlogIndex extends React.Component {
@@ -23,7 +21,7 @@ class BlogIndex extends React.Component {
           <Row>
             <Col md={12}>
               <div style={{
-                  fontSize: "200px",
+                  fontSize: "15em",
                   textAlign: "center"
                 }}>
                   <strong>BLOG</strong>                       
@@ -75,15 +73,7 @@ class BlogIndex extends React.Component {
           );
         })}
         </Container>
-        <div>
-          <footer style={{
-            textAlign: "center", 
-            marginTop: rhythm(3/2),
-            marginBottom: rhythm(1),
-          }}>
-            © {new Date().getFullYear()} Ralph Gregor Aquino
-          </footer>
-        </div>
+        <Footer />
       </div>
     );
   }
@@ -104,7 +94,7 @@ export const pageQuery = graphql`
           excerpt
           frontmatter {
             id
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD MMMM YYYY")
             title
             description
             hero {

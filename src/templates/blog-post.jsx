@@ -7,6 +7,7 @@ import { Container, Row, Col } from 'react-grid-system';
 import SEO from '../components/SEO';
 import { rhythm, scale } from '../utils/typography';
 import Layout from '../components/Layout';
+import Footer from '../components/Footer/Footer';
 
 class BlogPostTemplate extends React.Component {
 
@@ -99,6 +100,7 @@ class BlogPostTemplate extends React.Component {
               </Col>
             </Row>
         </Container>
+        <Footer />
       </>
     );
   }
@@ -121,7 +123,7 @@ export const pageQuery = graphql`
       frontmatter {
         id
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMMM YYYY")
         description
         disqusURL
         hero {
