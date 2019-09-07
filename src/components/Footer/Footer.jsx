@@ -5,15 +5,15 @@ import { rhythm } from '../../utils/typography';
 class Footer extends Component {
   render() {
     return (
-      <div  style={{
-        textAlign: 'center',
-        marginTop: rhythm(3 / 2),
-        marginBottom: rhythm(1),
-      }}>
+      <div
+        style={{
+          textAlign: 'center',
+          marginTop: rhythm(3 / 2),
+          marginBottom: rhythm(1),
+        }}
+      >
         <footer>
-          <div>
-            © {new Date().getFullYear()} Ralph Gregor Aquino
-          </div>
+          <div>© {new Date().getFullYear()} Ralph Gregor Aquino</div>
           <div>
             <p>
               <a href="https://github.com/rgaquino">GITHUB</a> //{' '}
@@ -24,7 +24,6 @@ class Footer extends Component {
           </div>
         </footer>
       </div>
-
     );
   }
 }

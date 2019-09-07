@@ -22,7 +22,7 @@ class Index extends React.Component {
         >
           <Container>
             <Row>
-              <Col md={12}>
+              <Col lg={12}>
                 <div style={{ fontSize: '75px' }}>
                   <strong>Hi, I'm RG.</strong>
                 </div>
@@ -49,7 +49,7 @@ class Index extends React.Component {
         </FullScreenLayout>
         <Container>
           <Row style={{ paddingTop: rhythm(2) }}>
-            <Col md={10} offset={{ md: 1 }}>
+            <Col lg={10} offset={{ md: 1 }}>
               <div style={{ textAlign: 'center' }}>
                 <Link to="/blog">
                   <span style={{ fontSize: '40px' }}>
@@ -82,15 +82,15 @@ class Index extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col md={12}>
+            <Col lg={12}>
               <hr />
             </Col>
           </Row>
           <Row style={{ paddingBottom: rhythm(2), paddingTop: rhythm(2) }}>
-            <Col md={12}>
+            <Col lg={12}>
               <Container>
                 <Row>
-                  <Col md={6} offset={{ md: 1 }}>
+                  <Col lg={6} offset={{ md: 1 }}>
                     <div style={{ textAlign: 'center' }}>
                       <Link to="/books">
                         <span style={{ fontSize: '40px' }}>
@@ -108,20 +108,28 @@ class Index extends React.Component {
                         published here.
                       </p>
                     </div>
-                    <div style={{ textAlign: 'right', paddingTop: rhythm(1)}}>
-                        <LabelTag value="Last Book Read"></LabelTag>
-                        <div style={{ fontSize: "25px", paddingBottom: rhythm(1/2)}}>
-                          <em>"There's no protecting anyone. Keeping people safe is a story we tell ourselves."</em>
-                        </div>
-                        <div style={{ paddingTop: rhythm(1/2)}}>
-                          <strong>COMMONWEALTH</strong>
-                          <p>
-                            <em>by Ann Pachett</em>
-                          </p>
-                        </div>
+                    <div style={{ textAlign: 'right', paddingTop: rhythm(1) }}>
+                      <LabelTag value="Last Book Read"></LabelTag>
+                      <div
+                        style={{
+                          fontSize: '25px',
+                          paddingBottom: rhythm(1 / 2),
+                        }}
+                      >
+                        <em>
+                          "There's no protecting anyone. Keeping people safe is
+                          a story we tell ourselves."
+                        </em>
+                      </div>
+                      <div style={{ paddingTop: rhythm(1 / 2) }}>
+                        <strong>COMMONWEALTH</strong>
+                        <p>
+                          <em>by Ann Pachett</em>
+                        </p>
+                      </div>
                     </div>
                   </Col>
-                  <Col md={4}>
+                  <Col lg={4}>
                     <div style={{ textAlign: 'center' }}>
                       <Image
                         fluid={data.sampleBook.childImageSharp.fluid}
@@ -130,10 +138,8 @@ class Index extends React.Component {
                   </Col>
                 </Row>
                 <Row style={{ paddingTop: rhythm(1) }}>
-                  <Col md={10} offset={{ md: 1 }}>
-                    <div
-                      style={{ textAlign: 'center' }}
-                    >
+                  <Col lg={10} offset={{ md: 1 }}>
+                    <div style={{ textAlign: 'center' }}>
                       <Link to="/books">
                         <strong>[ view more books ]</strong>
                       </Link>
@@ -144,22 +150,24 @@ class Index extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col md={12}>
+            <Col lg={12}>
               <hr />
             </Col>
           </Row>
           <Row style={{ paddingBottom: rhythm(2), paddingTop: rhythm(2) }}>
-            <Col md={12}>
+            <Col lg={12}>
               <Container>
                 <Row>
-                  <Col md={4} offset={{ md: 1 }}>
-                    <div style={{ textAlign: 'center', paddingBottom: rhythm(1) }}>
+                  <Col lg={4} offset={{ md: 1 }}>
+                    <div
+                      style={{ textAlign: 'center', paddingBottom: rhythm(1) }}
+                    >
                       <Image
                         fluid={data.samplePhoto.childImageSharp.fluid}
                       ></Image>
                     </div>
                   </Col>
-                  <Col md={6}>
+                  <Col lg={6}>
                     <div style={{ textAlign: 'center' }}>
                       <Link to="/photos">
                         <span style={{ fontSize: '40px' }}>
@@ -182,25 +190,25 @@ class Index extends React.Component {
                         learn how to exalt the human condition.
                       </p>
                     </div>
-                    <div style={{ textAlign: 'left', paddingTop: rhythm(1/2)}}>
-                          <LabelTag value="Latest Photo"></LabelTag>
-                          <div style={{ fontSize: "25px"}}>
-                            <em>"fish as deep down as possible"</em>
-                          </div>
-                          <div style={{ paddingTop: rhythm(1/2)}}>
-                            <strong>SYDNEY, AUSTRALIA</strong>
-                            <p>
-                              <em>August 2019</em>
-                            </p>
-                          </div>
+                    <div
+                      style={{ textAlign: 'left', paddingTop: rhythm(1 / 2) }}
+                    >
+                      <LabelTag value="Latest Photo"></LabelTag>
+                      <div style={{ fontSize: '25px' }}>
+                        <em>"fish as deep down as possible"</em>
                       </div>
+                      <div style={{ paddingTop: rhythm(1 / 2) }}>
+                        <strong>SYDNEY, AUSTRALIA</strong>
+                        <p>
+                          <em>August 2019</em>
+                        </p>
+                      </div>
+                    </div>
                   </Col>
                 </Row>
-                <Row style={{ paddingTop: rhythm(1/2) }}>
-                  <Col md={10} offset={{ md: 1 }}>
-                    <div
-                      style={{ textAlign: 'center' }}
-                    >
+                <Row style={{ paddingTop: rhythm(1 / 2) }}>
+                  <Col lg={10} offset={{ md: 1 }}>
+                    <div style={{ textAlign: 'center' }}>
                       <Link to="/photos">
                         <strong>[ view more photos ]</strong>
                       </Link>
@@ -211,22 +219,25 @@ class Index extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col md={12}>
+            <Col lg={12}>
               <hr />
             </Col>
           </Row>
           <Row style={{ paddingTop: rhythm(2) }}>
-            <Col md={10} offset={{ md: 1 }}>
+            <Col lg={10} offset={{ md: 1 }}>
               <div style={{ textAlign: 'center' }}>
                 <p>
-                  I'm aiming to have all of my socials aggregated in this website. Until then, follow me on any of the links below.
+                  I'm aiming to have all of my socials to be aggregated and
+                  displayed on this website. It is currently on active
+                  development and you can find the source code{' '}
+                  <a href="https://github.com/rgaquino/site">here</a>. For the
+                  meantime, you can reach me on any of the links below.
                 </p>
-
               </div>
             </Col>
           </Row>
           <Row>
-            <Col md={12}>
+            <Col lg={12}>
               <Footer />
             </Col>
           </Row>

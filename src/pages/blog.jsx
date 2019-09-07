@@ -17,7 +17,9 @@ class BlogIndex extends React.Component {
           <Row>
             <Col md={12} style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '150px' }}>
-                <Link to="/"><strong>BLOG</strong></Link>
+                <Link to="/">
+                  <strong>BLOG</strong>
+                </Link>
               </div>
               <p>
                 I'm using this website as a command center for my digital life
