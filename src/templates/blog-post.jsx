@@ -4,10 +4,10 @@ import { DiscussionEmbed } from 'disqus-react';
 import BackgroundImage from 'gatsby-background-image';
 import { Container, Row, Col } from 'react-grid-system';
 
-import SEO from '../components/SEO';
 import { rhythm, scale } from '../utils/typography';
-import Layout from '../components/Layout';
-import Footer from '../components/Footer/Footer';
+import SEO from '../components/SEO';
+import BlogDate from '../components/BlogDate'
+import Footer from '../components/Footer';
 
 class BlogPostTemplate extends React.Component {
 
@@ -48,19 +48,7 @@ class BlogPostTemplate extends React.Component {
             <Container>
               <Row>
                 <Col md={12}>
-                   <div style= {{
-                        paddingBottom: rhythm(1),
-                        color: "#fff"
-                    }}
-                  >
-                    <span style={{ 
-                        backgroundColor: "#242424", 
-                        padding: "10px", 
-                      }}
-                    >
-                      {post.frontmatter.date}
-                    </span>
-                  </div>
+                  <BlogDate date={post.frontmatter.date} />
                   <div style= {{
                       fontSize: "60px",
                       color: "#fff",
@@ -80,8 +68,10 @@ class BlogPostTemplate extends React.Component {
                     </Link>
                   </div>
                   <div style= {{
-                      color: "#fff"
-                    }}>
+                      color: "#fff",
+                      fontSize: "20px"
+                    }}
+                  >
                     <p dangerouslySetInnerHTML={{__html: post.frontmatter.description }}/>
                   </div>
                 </Col>
