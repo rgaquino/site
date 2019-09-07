@@ -2,8 +2,8 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
 import BackgroundImage from 'gatsby-background-image';
+import { Container, Row, Col } from 'react-grid-system';
 
-import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import { rhythm, scale } from '../utils/typography';
 
@@ -23,47 +23,80 @@ class BlogPostTemplate extends React.Component {
     };
 
     return (
-      <div>
+      <>
+        <SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
         <BackgroundImage
           Tag="section"
           fluid={post.frontmatter.hero.childImageSharp.fluid}
           backgroundColor={`#040e18`}
-          style={{ height: "100vh" }}
+          style={{ 
+            height: "70vh", 
+            textAlign: "center", 
+            marginBottom: rhythm(2)
+          }}
         >
+          <div style={{ 
+            background: "rgba(0, 0, 0, 0.70)", 
+            width: "100%", 
+            height: "100%",             
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+          }}>
+            <Container>
+              <Row>
+                <Col md={12}>
+                   <div style= {{
+                        paddingBottom: rhythm(1),
+                        color: "#fff"
+                    }}
+                  >
+                    <span style={{ 
+                        backgroundColor: "#242424", 
+                        padding: "10px", 
+                      }}
+                    >
+                      {post.frontmatter.date}
+                    </span>
+                  </div>
+                  <div style= {{
+                      fontSize: "50px",
+                      color: "#fff",
+                      lineHeight: 1.125,
+                      paddingBottom: rhythm(3/4),
+                  }}>
+                    <Link to="/blog" style={{ 
+                        backgroundColor: "#fff", 
+                        paddingLeft: "10px", 
+                        paddingRight: "10px",
+                      }}>
+                        <strong>{post.frontmatter.title}</strong>
+                    </Link>
+                  </div>
+                  <div style= {{
+                        paddingLeft: "10px",
+                        paddingRight: "10px",
+                        color: "#fff"
+                    }}>
+                    <em>{post.frontmatter.description}</em>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </div>
         </BackgroundImage>
-        <Layout location={this.props.location} title={siteTitle}>
-          <SEO
-            title={post.frontmatter.title}
-            description={post.frontmatter.description || post.excerpt}
-          />
-          <article>
-            <header>
-              <Link to="/blog">
-                <h1
-                  style={{
-                    marginTop: rhythm(1),
-                    marginBottom: 0,
-                  }}
-                >
-                  {post.frontmatter.title}
-                </h1>
-              </Link>
-              <p
-                style={{
-                  ...scale(-1 / 5),
-                  display: `block`,
-                  marginBottom: rhythm(1),
-                }}
-              >
-                {post.frontmatter.date}
-              </p>
-            </header>
-            <section dangerouslySetInnerHTML={{ __html: post.html }}/>
-            <footer/>
-          </article>
-          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig}/>
-        </Layout>
-      </div>
+         <Container>
+            <Row>
+              <Col md={10} offset={{ md: 1 }}>
+                <article>
+                  <section dangerouslySetInnerHTML={{ __html: post.html }}/>
+                  <footer/>
+                </article>
+                <DiscussionEmbed shortname={disqusShortname} config={disqusConfig}/>
+              </Col>
+            </Row>
+        </Container>
+      </>
     );
   }
 }

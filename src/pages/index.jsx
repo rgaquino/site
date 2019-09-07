@@ -10,7 +10,7 @@ class Index extends React.Component {
   render() {
     return (
       <div style={{
-        // height: "100vh",
+        height: "100vh",
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",

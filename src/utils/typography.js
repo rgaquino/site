@@ -1,8 +1,11 @@
 import Typography from 'typography';
 import GrandView from 'typography-theme-grand-view';
 
-GrandView.overrideThemeStyles = () => {
+GrandView.overrideThemeStyles = ({ rhythm }) => {
   return {
+    "h1,h2,h3,h4,h5,h6": {
+      marginTop: rhythm(0)
+    },
     'a.gatsby-resp-image-link': {
       boxShadow: `none`,
     },
