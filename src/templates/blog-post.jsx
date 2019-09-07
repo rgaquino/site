@@ -6,6 +6,7 @@ import { Container, Row, Col } from 'react-grid-system';
 
 import SEO from '../components/SEO';
 import { rhythm, scale } from '../utils/typography';
+import Layout from '../components/Layout';
 
 class BlogPostTemplate extends React.Component {
 
@@ -30,7 +31,7 @@ class BlogPostTemplate extends React.Component {
           fluid={post.frontmatter.hero.childImageSharp.fluid}
           backgroundColor={`#040e18`}
           style={{ 
-            height: "70vh", 
+            height: "100vh", 
             textAlign: "center", 
             marginBottom: rhythm(2)
           }}
@@ -60,7 +61,7 @@ class BlogPostTemplate extends React.Component {
                     </span>
                   </div>
                   <div style= {{
-                      fontSize: "50px",
+                      fontSize: "60px",
                       color: "#fff",
                       lineHeight: 1.25,
                       paddingBottom: rhythm(3/4),
@@ -78,11 +79,9 @@ class BlogPostTemplate extends React.Component {
                     </Link>
                   </div>
                   <div style= {{
-                        paddingLeft: "10px",
-                        paddingRight: "10px",
-                        color: "#fff"
+                      color: "#fff"
                     }}>
-                    <em>{post.frontmatter.description}</em>
+                    <p dangerouslySetInnerHTML={{__html: post.frontmatter.description }}/>
                   </div>
                 </Col>
               </Row>

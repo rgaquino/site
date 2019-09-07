@@ -2,7 +2,7 @@
 id: "finding-dory"
 title: "Finding Dory reminds us to cherish differences, in a world where hate seems easier"
 date: "2016-06-18T22:12:03.284Z"
-description: "Pixar’s best non-Toy Story sequel to date builds on and transcends the original's themes by exploring what it means to be included."
+description: "Pixar’s best non-<em>Toy Story</em> sequel to date builds on and transcends the original's themes by exploring what it means to be included."
 hero: "./hero.jpg"
 ---
 

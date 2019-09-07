@@ -2,7 +2,7 @@
 id: "a-blonded-year"
 title: "A Blonded Year"
 date: "2017-11-20T22:12:03.284Z"
-description: "Frank Ocean's 2016 album Blonde interepreted as a modern day bildungsroman."
+description: "Frank Ocean's 2016 album <em>Blonde</em> interepreted as a modern day bildungsroman."
 disqusURL: "http://rgaquino.com/blog/2017/11/20/a-blonded-year.html"
 hero: "./hero.jpg"
 ---
