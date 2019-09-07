@@ -18,8 +18,7 @@ class Footer extends Component {
             <p>
               <a href="https://github.com/rgaquino">GITHUB</a> //{' '}
               <a href="https://linkedin.com/in/rgaquino">LINKEDIN</a> //{' '}
-              <a href="https://instagram.com/rgaquino">INSTAGRAM</a> //{' '}
-              <a href="https://letterboxd.com/rgaquino">LETTERBOXD</a>
+              <a href="https://instagram.com/rgaquino">INSTAGRAM</a>
             </p>
           </div>
         </footer>

@@ -8,9 +8,9 @@ import FullScreenLayout from '../components/FullScreenLayout';
 import BlogList from '../components/BlogList';
 import Footer from '../components/Footer';
 import LabelTag from '../components/LabelTag';
+import Arrow from '../components/Arrow';
 
 import { rhythm } from '../utils/typography';
-import '../css/global.css';
 
 class Index extends React.Component {
   render() {
@@ -28,28 +28,21 @@ class Index extends React.Component {
           <Container>
             <Row>
               <Col lg={12}>
-                <div style={{ fontSize: '75px' }}>
+                <div style={{ fontSize: '125px'}}>
                   <strong>Hi, I'm RG.</strong>
                 </div>
-                <p>
+                <p style={{ fontSize: '20px' }}>
                   I'm a Software Engineer based in Singapore currently writing
-                  backend code for{' '}
-                  <a href="https://github.com/eatigo">@eatigo</a>. Nowadays I
-                  write mostly in Go and JavaScript, but I previously worked on
-                  financial web applications mainly using Java.
+                    backend code for{' '}
+                    <a href="https://github.com/eatigo">@eatigo</a>. Nowadays I
+                    write mostly in <strong>Go</strong> and <strong>JavaScript</strong>. Previously, I worked on
+                    financial web applications built using <strong>Java</strong>.
                 </p>
               </Col>
             </Row>
             <Row>
-              <Col
-                lg={12}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}
-              >
-                <div className="arrow" />
+              <Col lg={12}>
+                <Arrow />
               </Col>
             </Row>
           </Container>
@@ -60,7 +53,7 @@ class Index extends React.Component {
               <Container>
                 <Row>
                   <Col lg={10} offset={{ lg: 1 }}>
-                    <div style={{ textAlign: 'left' }}>
+                    <div style={{ textAlign: 'center' }}>
                       <Link to="/blog">
                         <span style={{ fontSize: '40px' }}>
                           <strong>BLOG</strong>
