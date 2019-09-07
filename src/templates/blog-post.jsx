@@ -62,15 +62,19 @@ class BlogPostTemplate extends React.Component {
                   <div style= {{
                       fontSize: "50px",
                       color: "#fff",
-                      lineHeight: 1.125,
+                      lineHeight: 1.25,
                       paddingBottom: rhythm(3/4),
                   }}>
                     <Link to="/blog" style={{ 
-                        backgroundColor: "#fff", 
-                        paddingLeft: "10px", 
-                        paddingRight: "10px",
-                      }}>
-                        <strong>{post.frontmatter.title}</strong>
+                      backgroundColor: "#fff", 
+                      paddingLeft: "10px",
+                      paddingRight: "10px",
+                      paddingBottom: "3px",
+                      paddingTop: "3px",
+                      boxDecorationBreak: "clone", 
+                      WebkitBoxDecorationBreak: "clone",
+                    }}>
+                        <strong>{post.frontmatter.title}</strong>                        
                     </Link>
                   </div>
                   <div style= {{
