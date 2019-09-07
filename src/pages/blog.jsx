@@ -7,7 +7,6 @@ import { Container, Row, Col } from 'react-grid-system';
 import Footer from '../components/Footer';
 import BlogList from '../components/BlogList';
 
-
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
@@ -19,7 +18,7 @@ class BlogIndex extends React.Component {
           <Row>
             <Col md={12}>
               <div style={{
-                  fontSize: "15em",
+                  fontSize: '200px',
                   textAlign: "center"
                 }}>
                   <strong>BLOG</strong>                       

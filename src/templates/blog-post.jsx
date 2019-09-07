@@ -13,7 +13,6 @@ class BlogPostTemplate extends React.Component {
 
   render() {
     const post = this.props.data.markdownRemark;
-    const siteTitle = this.props.data.site.siteMetadata.title;
     const { slug } = this.props.pageContext;
 
     // Disqus Configurations
