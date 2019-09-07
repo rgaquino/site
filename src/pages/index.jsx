@@ -154,7 +154,7 @@ class Index extends React.Component {
                 </Row>
                 <Row style={{ paddingTop: rhythm(1) }}>
                   <Col lg={12}>
-                    <div style={{ textAlign: 'center' }}>
+                    <div style={{ textAlign: 'center'}}>
                       <Link to="/books">
                         <strong>[ view more books ]</strong>
                       </Link>

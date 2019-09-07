@@ -6,7 +6,7 @@ class FullScreenImageLayout extends Component {
   render() {
     const backgroundColor = this.props.backgroundColor
       ? this.props.backgroundColor
-      : '#fff';
+      : '#242424';
     return (
       <BackgroundImage
         fluid={this.props.image}
