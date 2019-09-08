@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-grid-system';
 
-import LabelTag from '../LabelTag';
-import Arrow from '../Arrow';
-import { rhythm } from '../../utils/typography';
-import { BLOG_PATH } from '../../utils/paths';
+import LabelTag from '../../common/LabelTag/index';
+import Arrow from '../../common/Arrow/index';
+import { rhythm } from '../../../utils/typography';
+import { BLOG_PATH } from '../../../utils/paths';
 
 class BlogHeader extends Component {
   render() {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
-import { rhythm } from '../../utils/typography';
+import { rhythm } from '../../../utils/typography';
 
 class CenterButton extends Component {
   render() {

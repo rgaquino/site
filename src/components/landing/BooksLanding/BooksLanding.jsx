@@ -4,11 +4,11 @@ import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 import PropTypes from 'prop-types';
 
-import LabelTag from '../LabelTag';
-import CenterButton from '../CenterButton';
+import LabelTag from '../../common/LabelTag';
+import CenterButton from '../../common/CenterButton';
 
-import { rhythm } from '../../utils/typography';
-import { BOOKS_PATH, READING_LIST_PATH } from '../../utils/paths';
+import { rhythm } from '../../../utils/typography';
+import { BOOKS_PATH, READING_LIST_PATH } from '../../../utils/paths';
 
 class BooksLanding extends Component {
   render() {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 
-import { rhythm } from '../../utils/typography';
-import { HOME_PATH } from '../../utils/paths';
+import { rhythm } from '../../../utils/typography';
+import { HOME_PATH } from '../../../utils/paths';
 
 class Navbar extends Component {
   render() {

@@ -1,15 +1,15 @@
 import React, { Fragment } from 'react';
 import { graphql } from 'gatsby';
 
-import SEO from '../components/SEO';
-import Footer from '../components/Footer';
-import FullScreenImageLayout from '../components/FullScreenImageLayout';
-import BlogHeader from '../components/BlogHeader';
-import BlogContent from '../components/BlogContent';
+import SEO from '../components/common/SEO';
+import Footer from '../components/common/Footer';
+import FullScreenImageLayout from '../components/layout/FullScreenImageLayout';
+import BlogHeader from '../components/blog/BlogHeader';
+import BlogContent from '../components/blog/BlogContent';
 
 import { rhythm } from '../utils/typography';
 
-class BlogPost extends React.Component {
+class Blog extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     return (
@@ -36,7 +36,7 @@ class BlogPost extends React.Component {
   }
 }
 
-export default BlogPost;
+export default Blog;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {

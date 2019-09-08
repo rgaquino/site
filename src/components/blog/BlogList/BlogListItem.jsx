@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 
-import { rhythm } from '../../utils/typography';
+import { rhythm } from '../../../utils/typography';
 
-import LabelTag from '../LabelTag';
+import LabelTag from '../../common/LabelTag/index';
 
 class BlogListItem extends Component {
   render() {

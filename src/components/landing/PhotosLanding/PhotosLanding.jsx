@@ -4,14 +4,14 @@ import Image from 'gatsby-image';
 import { Container, Row, Col } from 'react-grid-system';
 import PropTypes from 'prop-types';
 
-import LabelTag from '../LabelTag';
-import CenterButton from '../CenterButton';
-import { rhythm } from '../../utils/typography';
+import LabelTag from '../../common/LabelTag/index';
+import CenterButton from '../../common/CenterButton/index';
+import { rhythm } from '../../../utils/typography';
 import {
   PHOTOS_PATH,
   LETTERBOXD_PATH,
   INSTAGRAM_PATH,
-} from '../../utils/paths';
+} from '../../../utils/paths';
 
 class PhotosLanding extends Component {
   render() {

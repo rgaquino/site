@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
-import Arrow from '../Arrow';
-import { WORK_PATH } from '../../utils/paths';
+import Arrow from '../../common/Arrow/index';
+import { WORK_PATH } from '../../../utils/paths';
 
 class Intro extends Component {
   render() {

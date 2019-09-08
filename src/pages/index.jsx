@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 import { graphql } from 'gatsby';
 
-import SEO from '../components/SEO';
-import FullScreenLayout from '../components/FullScreenLayout';
+import SEO from '../components/common/SEO';
+import FullScreenLayout from '../components/layout/FullScreenLayout';
 
-import Footer from '../components/Footer';
-import Intro from '../components/Intro';
-import LandingPages from '../components/LandingPages';
+import Footer from '../components/common/Footer';
+import Intro from '../components/landing/Intro';
+import LandingPages from '../components/landing/LandingPages';
 
 class Index extends React.Component {
   render() {

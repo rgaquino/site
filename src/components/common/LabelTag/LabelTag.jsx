@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { rhythm } from '../../utils/typography';
+import { rhythm } from '../../../utils/typography';
 
 class LabelTag extends Component {
   render() {

@@ -2,9 +2,9 @@ import React, { Component, Fragment } from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
-import SEO from '../SEO';
-import FullScreenLayout from '../FullScreenLayout';
-import { HOME_PATH } from '../../utils/paths';
+import SEO from '../../common/SEO';
+import FullScreenLayout from '../../layout/FullScreenLayout';
+import { HOME_PATH } from '../../../utils/paths';
 
 class PlaceholderPage extends Component {
   render() {

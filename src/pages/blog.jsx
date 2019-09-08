@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import SEO from '../components/SEO';
+import SEO from '../components/common/SEO';
 import { Container, Row, Col } from 'react-grid-system';
 
-import Footer from '../components/Footer';
-import BlogList from '../components/BlogList';
-import Navbar from '../components/Navbar';
+import Footer from '../components/common/Footer';
+import BlogList from '../components/blog/BlogList';
+import Navbar from '../components/common/Navbar';
 
 import { ROCI_INTRO_PATH } from '../utils/paths';
 

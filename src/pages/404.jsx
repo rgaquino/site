@@ -1,8 +1,6 @@
 import React from 'react';
 
-import PlaceholderPage from '../components/PlaceholderPage';
-
-import { HOME_PATH } from '../utils/paths';
+import PlaceholderPage from '../components/layout/PlaceholderPage';
 
 class NotFoundPage extends React.Component {
   render() {

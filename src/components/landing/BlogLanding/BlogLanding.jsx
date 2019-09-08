@@ -3,10 +3,10 @@ import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-grid-system';
 import PropTypes from 'prop-types';
 
-import BlogList from '../BlogList';
-import CenterButton from '../CenterButton';
+import BlogList from '../../blog/BlogList';
+import CenterButton from '../../common/CenterButton';
 
-import { BLOG_PATH, ROCI_INTRO_PATH } from '../../utils/paths';
+import { BLOG_PATH, ROCI_INTRO_PATH } from '../../../utils/paths';
 
 class BlogLanding extends Component {
   render() {

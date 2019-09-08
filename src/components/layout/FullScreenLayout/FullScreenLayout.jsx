@@ -1,6 +1,5 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import BackgroundImage from 'gatsby-background-image';
 
 class FullScreenLayout extends Component {
   render() {

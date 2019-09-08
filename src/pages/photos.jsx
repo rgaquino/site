@@ -1,5 +1,5 @@
 import React from 'react';
-import PlaceholderPage from '../components/PlaceholderPage';
+import PlaceholderPage from '../components/layout/PlaceholderPage';
 
 import { INSTAGRAM_PATH } from '../utils/paths';
 

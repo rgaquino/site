@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Container, Row, Col } from 'react-grid-system';
 
@@ -7,7 +7,7 @@ import BooksLanding from '../BooksLanding';
 import PhotosLanding from '../PhotosLanding';
 import ExtraLanding from '../ExtraLanding';
 
-import { rhythm } from '../../utils/typography';
+import { rhythm } from '../../../utils/typography';
 
 class LandingPages extends Component {
   render() {
