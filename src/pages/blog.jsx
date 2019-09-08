@@ -71,7 +71,7 @@ export const pageQuery = graphql`
             description
             hero {
               childImageSharp {
-                fluid(quality: 100) {
+                fluid(quality: 100, cropFocus: CENTER) {
                   ...GatsbyImageSharpFluid
                 }
               }
