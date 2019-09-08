@@ -6,11 +6,9 @@ import { BOOKS_PATH } from '../utils/paths';
 class BooksIndex extends React.Component {
   render() {
     return (
-        <PlaceholderPage 
-          title="Books"
-          altPath={BOOKS_PATH}
-          altPathText="reading list"
-        />
+        <PlaceholderPage title="Books">
+          Coming soon. Meanwhile, browse my <a href={BOOKS_PATH}>reading list</a>.
+        </PlaceholderPage>
     );
   }
 }

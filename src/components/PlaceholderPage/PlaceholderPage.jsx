@@ -8,7 +8,7 @@ import { HOME_PATH } from '../../utils/paths';
 
 class PlaceholderPage extends Component {
   render() {
-    const { title, altPath, altPathText} = this.props;
+    const { title, altPath, altPathText, children} = this.props;
     return (
       <Fragment>
         <SEO title={title} />
@@ -19,9 +19,7 @@ class PlaceholderPage extends Component {
             </Link>
           </div>
           <div style={{ textAlign: 'center', fontSize: '1.25em'}}>
-            <p>
-              Coming soon. Meanwhile, browse my <a href={altPath}>{altPathText}</a>.
-            </p>
+            {children}
           </div>
         </FullScreenLayout>
       </Fragment>
@@ -31,8 +29,6 @@ class PlaceholderPage extends Component {
 
 PlaceholderPage.propTypes = {
   title: PropTypes.string.isRequired,
-  altPath: PropTypes.string.isRequired,
-  altPathText: PropTypes.string.isRequired,
 }
 
 

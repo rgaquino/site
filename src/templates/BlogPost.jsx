@@ -12,7 +12,6 @@ import { rhythm } from '../utils/typography';
 class BlogPost extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
-
     return (
       <Fragment>
         <SEO
