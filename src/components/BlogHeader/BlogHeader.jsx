@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-grid-system';
 
 import LabelTag from '../LabelTag';
 import { rhythm } from '../../utils/typography';
+import { BLOG_PATH } from '../../utils/paths';
 
 class BlogHeader extends Component {
   render() {
@@ -23,7 +24,7 @@ class BlogHeader extends Component {
               }}
             >
               <Link
-                to="/blog"
+                to={BLOG_PATH}
                 style={{
                   backgroundColor: '#fff',
                   paddingLeft: '10px',

@@ -4,6 +4,8 @@ import { Link } from 'gatsby';
 import SEO from '../components/SEO';
 import FullScreenLayout from '../components/FullScreenLayout';
 
+import { INSTAGRAM_PATH, HOME_PATH } from '../utils/paths';
+
 class PhotosIndex extends React.Component {
   render() {
     return (
@@ -16,7 +18,7 @@ class PhotosIndex extends React.Component {
               textAlign: 'center',
             }}
           >
-            <Link to="/">
+            <Link to={HOME_PATH}>
               <strong>PHOTOS</strong>
             </Link>
           </div>
@@ -28,7 +30,7 @@ class PhotosIndex extends React.Component {
           >
             <p>
               Coming soon. Meanwhile, follow me on{' '}
-              <a href="https://instagram.com/rgaquino">Instagram.</a>
+              <a href={INSTAGRAM_PATH}>Instagram.</a>
             </p>
           </div>
         </FullScreenLayout>

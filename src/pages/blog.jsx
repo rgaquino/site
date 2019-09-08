@@ -8,6 +8,8 @@ import Footer from '../components/Footer';
 import BlogList from '../components/BlogList';
 import Navbar from '../components/Navbar';
 
+import { ROCI_INTRO_PATH } from '../utils/paths';
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
@@ -28,12 +30,12 @@ class BlogIndex extends React.Component {
               <p>
                 I'm using this website as a command center for my digital life
                 and as a way to learn new tech as they come. I'm calling it{' '}
-                <Link to="/blog/introducing-rocinante">
+                <Link to={ROCI_INTRO_PATH}>
                   <strong>The Rocinante Project</strong>
                 </Link>
                 , with the end goal of having expertise on multiple web
                 development stacks and not get overwhelmed by how much there is
-                to learn. I'm <Link to="/blog">blogging</Link> about the steps
+                to learn. I'm blogging about the steps
                 of building this website from design to implementation to both
                 track my progress and as a way for others to learn from them. I
                 believe in the value of not erasing our own learning arc by

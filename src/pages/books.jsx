@@ -3,11 +3,10 @@ import { Link } from 'gatsby';
 
 import SEO from '../components/SEO';
 import FullScreenLayout from '../components/FullScreenLayout';
-import Footer from '../components/Footer';
+import { READING_LIST_PATH, HOME_PATH } from '../utils/paths';
 
 class BooksIndex extends React.Component {
   render() {
-    const { data } = this.props;
     return (
       <div>
         <SEO title="Books" />
@@ -18,7 +17,7 @@ class BooksIndex extends React.Component {
               textAlign: 'center',
             }}
           >
-            <Link to="/">
+            <Link to={HOME_PATH}>
               <strong>BOOKS</strong>
             </Link>
           </div>
@@ -30,7 +29,7 @@ class BooksIndex extends React.Component {
           >
             <p>
               Coming soon. Meanwhile, browse my{' '}
-              <a href="https://trello.com/b/0SUpWrLd">reading list.</a>
+              <a href={READING_LIST_PATH}>reading list.</a>
             </p>
           </div>
         </FullScreenLayout>

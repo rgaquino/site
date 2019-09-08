@@ -5,8 +5,10 @@ import Image from 'gatsby-image';
 import PropTypes from 'prop-types';
 
 import LabelTag from '../LabelTag';
+import CenterButton from '../CenterButton';
 
 import { rhythm } from '../../utils/typography';
+import { BOOKS_PATH, READING_LIST_PATH } from '../../utils/paths';
 
 class BooksLanding extends Component {
   render() {
@@ -15,14 +17,14 @@ class BooksLanding extends Component {
         <Row>
           <Col lg={8}>
             <div style={{ textAlign: 'left'}}>
-              <Link to="/books">
+              <Link to={BOOKS_PATH}>
                 <span style={{ fontSize: '40px' }}>
                   <strong>BOOKS</strong>
                 </span>
               </Link>
               <p>
                 On my free time, I read a ton of{' '}
-                <a href="https://trello.com/b/0SUpWrLd"> books</a>{' '}
+                <a href={READING_LIST_PATH}> books</a>{' '}
                 ranging from contemporary fiction, narrative
                 non-fiction, and the occassional young adult novel. My
                 favorite authors include Jack Kerouac, Cixin Liu, Andre
@@ -60,13 +62,9 @@ class BooksLanding extends Component {
             </div>
           </Col>
         </Row>
-        <Row style={{ paddingTop: rhythm(1) }}>
+        <Row>
           <Col lg={12}>
-            <div style={{ textAlign: 'center'}}>
-              <Link to="/books">
-                <strong>[ view more books ]</strong>
-              </Link>
-            </div>
+            <CenterButton text="view more books" to={BOOKS_PATH} />
           </Col>
         </Row>
       </Container>

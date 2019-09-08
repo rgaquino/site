@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import { rhythm } from '../../utils/typography';
+import { GITHUB_PATH, LINKEDIN_PATH, INSTAGRAM_PATH } from '../../utils/paths';
+
 
 class Footer extends Component {
   render() {
@@ -16,9 +18,9 @@ class Footer extends Component {
           <div>© {new Date().getFullYear()} Ralph Gregor Aquino</div>
           <div>
             <p>
-              <a href="https://github.com/rgaquino">GITHUB</a> //{' '}
-              <a href="https://linkedin.com/in/rgaquino">LINKEDIN</a> //{' '}
-              <a href="https://instagram.com/rgaquino">INSTAGRAM</a>
+              <a href={GITHUB_PATH}>GITHUB</a> //{' '}
+              <a href={LINKEDIN_PATH}>LINKEDIN</a> //{' '}
+              <a href={INSTAGRAM_PATH}>INSTAGRAM</a>
             </p>
           </div>
         </footer>

@@ -5,7 +5,9 @@ import { Container, Row, Col } from 'react-grid-system';
 import PropTypes from 'prop-types';
 
 import LabelTag from '../LabelTag';
+import CenterButton from '../CenterButton';
 import { rhythm } from '../../utils/typography';
+import { PHOTOS_PATH, LETTERBOXD_PATH, INSTAGRAM_PATH } from '../../utils/paths';
 
 class PhotosLanding extends Component {
   render() {
@@ -14,19 +16,19 @@ class PhotosLanding extends Component {
         <Row>
           <Col lg={12}>
             <div style={{ textAlign: 'center' }}>
-              <Link to="/photos">
+              <Link to={PHOTOS_PATH}>
                 <span style={{ fontSize: '40px' }}>
                   <strong>PHOTOS</strong>
                 </span>
               </Link>
               <p>
                 I also used to want to be a{' '}
-                <a href="https://letterboxd.com/rgaquino">film</a>{' '}
+                <a href={LETTERBOXD_PATH}>film</a>{' '}
                 critic but later realized that I'd rather be immersed in
                 them. Films from Mike Leigh, Asghar Farhadi, Mike Mills,
                 Edward Yang, Marco Berger, and Sean Baker have
                 influenced my life deeply. So instead, I try to practice{' '}
-                <a href="https://instagram.com/rgaquino">
+                <a href={INSTAGRAM_PATH}>
                   {' '}
                   photography
                 </a>{' '}
@@ -64,13 +66,9 @@ class PhotosLanding extends Component {
             </div>
           </Col>
         </Row>
-        <Row style={{ paddingTop: rhythm(1 / 2) }}>
+        <Row>
           <Col lg={12}>
-            <div style={{ textAlign: 'center' }}>
-              <Link to="/photos">
-                <strong>[ view more photos ]</strong>
-              </Link>
-            </div>
+            <CenterButton text="view more photos" to={PHOTOS_PATH} />
           </Col>
         </Row>
       </Container>

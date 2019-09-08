@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
 import Arrow from '../Arrow';
+import { WORK_PATH } from '../../utils/paths';
 
 class Intro extends Component {
   render() {
@@ -15,7 +16,7 @@ class Intro extends Component {
             <p style={{ fontSize: '20px' }}>
               I'm a Software Engineer based in Singapore currently writing
                 backend code for{' '}
-                <a href="https://github.com/eatigo"><strong>Eatigo</strong></a>. Nowadays I
+                <a href={WORK_PATH}><strong>Eatigo</strong></a>. Nowadays I
                 write mostly in Go and JavaScript. Previously, I worked on
                 financial web applications built using Java.
             </p>

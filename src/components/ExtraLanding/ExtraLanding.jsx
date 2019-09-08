@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
-
+import { ROCI_SOURCE_PATH } from '../../utils/paths';
 
 class ExtraLanding extends Component {
   render() {
@@ -14,7 +14,7 @@ class ExtraLanding extends Component {
                   I'm aiming to have all of my socials to be aggregated and
                   displayed on this website. It is currently on active
                   development and you can find the source code{' '}
-                  <a href="https://github.com/rgaquino/site">here</a>. For the
+                  <a href={ROCI_SOURCE_PATH}>here</a>. For the
                   meantime, if you're interested in working with me, send me a
                   message or follow me on any of the links below.
                 </p>
