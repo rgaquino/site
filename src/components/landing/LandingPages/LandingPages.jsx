@@ -26,7 +26,7 @@ class LandingPages extends Component {
             <hr />
           </Col>
         </Row>
-        <Row style={{ paddingBottom: rhythm(2), paddingTop: rhythm(2) }}>
+        <Row style={{ paddingBottom: rhythm(2), paddingTop: rhythm(1) }}>
           <Col lg={12}>
             <BooksLanding
               image={data.sampleBook.childImageSharp.fluid}
@@ -41,7 +41,7 @@ class LandingPages extends Component {
             <hr />
           </Col>
         </Row>
-        <Row style={{ paddingBottom: rhythm(2), paddingTop: rhythm(2) }}>
+        <Row style={{ paddingBottom: rhythm(2), paddingTop: rhythm(1) }}>
           <Col lg={12}>
             <PhotosLanding
               image={data.samplePhoto.childImageSharp.fluid}
@@ -57,7 +57,7 @@ class LandingPages extends Component {
             <hr />
           </Col>
         </Row>
-        <Row style={{ paddingTop: rhythm(2) }}>
+        <Row style={{ paddingTop: rhythm(1) }}>
           <Col lg={12}>
             <ExtraLanding />
           </Col>
