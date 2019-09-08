@@ -14,7 +14,7 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
     return (
-      <div style={{ backgroundColor: '#F7F7F7'}}>
+      <div style={{ backgroundColor: '#F7F7F7' }}>
         <SEO title="Blog" />
         <Container>
           <Row>

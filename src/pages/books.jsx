@@ -8,7 +8,7 @@ class BooksIndex extends React.Component {
     return (
       <PlaceholderLayout title="Books">
         <p>
-          Coming soon. <br/>
+          Coming soon. <br />
           Meanwhile, browse my <a href={BOOKS_PATH}>reading list</a>.
         </p>
       </PlaceholderLayout>

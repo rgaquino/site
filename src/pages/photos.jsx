@@ -8,7 +8,8 @@ class PhotosIndex extends React.Component {
     return (
       <PlaceholderLayout title="Photos">
         <p>
-          Coming soon.<br/>
+          Coming soon.
+          <br />
           Meanwhile, browse my <a href={INSTAGRAM_PATH}>Instagram</a>.
         </p>
       </PlaceholderLayout>
