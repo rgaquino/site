@@ -1,16 +1,18 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import { Container, Row, Col } from 'react-grid-system';
-import Image from 'gatsby-image';
 
 import SEO from '../components/SEO';
 import FullScreenLayout from '../components/FullScreenLayout';
-import BlogList from '../components/BlogList';
+
 import Footer from '../components/Footer';
-import LabelTag from '../components/LabelTag';
-import Arrow from '../components/Arrow';
+import Intro from '../components/Intro';
 
 import { rhythm } from '../utils/typography';
+import BlogLanding from '../components/BlogLanding';
+import BooksLanding from '../components/BooksLanding';
+import PhotosLanding from '../components/PhotosLanding';
+import ExtraLanding from '../components/ExtraLanding';
 
 class Index extends React.Component {
   render() {
@@ -25,70 +27,12 @@ class Index extends React.Component {
             color: '#fff',
           }}
         >
-          <Container>
-            <Row>
-              <Col lg={12}>
-                <div style={{ fontSize: '8em'}}>
-                  <strong>Hi, I'm RG.</strong>
-                </div>
-                <p style={{ fontSize: '20px' }}>
-                  I'm a Software Engineer based in Singapore currently writing
-                    backend code for{' '}
-                    <a href="https://github.com/eatigo"><strong>Eatigo</strong></a>. Nowadays I
-                    write mostly in Go and JavaScript. Previously, I worked on
-                    financial web applications built using Java.
-                </p>
-              </Col>
-            </Row>
-            <Row>
-              <Col lg={12}>
-                <Arrow />
-              </Col>
-            </Row>
-          </Container>
+          <Intro />
         </FullScreenLayout>
         <Container id="content">
           <Row style={{ paddingTop: rhythm(2) }}>
             <Col lg={12}>
-              <Container>
-                <Row>
-                  <Col lg={12}>
-                    <div style={{ textAlign: 'center' }}>
-                      <Link to="/blog">
-                        <span style={{ fontSize: '40px' }}>
-                          <strong>BLOG</strong>
-                        </span>
-                      </Link>
-                      <p>
-                        I'm using this website as a command center for my
-                        digital life and as a way to learn new tech as they
-                        come. I'm calling it{' '}
-                        <Link to="/blog/introducing-rocinante">
-                          <strong>The Rocinante Project</strong>
-                        </Link>
-                        , with the end goal of having expertise on multiple web
-                        development stacks and not get overwhelmed by how much
-                        there is to learn. I'm <Link to="/blog">blogging</Link>{' '}
-                        about the steps of building this website from design to
-                        implementation to both track my progress and as a way
-                        for others to learn from them. I believe in the value of
-                        not erasing our own learning arc by never feigning
-                        perfection.
-                      </p>
-                    </div>
-                    <div>
-                      <BlogList posts={data.allMarkdownRemark.edges} />
-                    </div>
-                    <div
-                      style={{ textAlign: 'center', paddingBottom: rhythm(2) }}
-                    >
-                      <Link to="/blog">
-                        <strong>[ view more posts ]</strong>
-                      </Link>
-                    </div>
-                  </Col>
-                </Row>
-              </Container>
+              <BlogLanding posts={data.allMarkdownRemark.edges}/>
             </Col>
           </Row>
           <Row>
@@ -98,70 +42,12 @@ class Index extends React.Component {
           </Row>
           <Row style={{ paddingBottom: rhythm(2), paddingTop: rhythm(2) }}>
             <Col lg={12}>
-              <Container>
-                <Row>
-                  <Col lg={8}>
-                    <div style={{ textAlign: 'left'}}>
-                      <Link to="/books">
-                        <span style={{ fontSize: '40px' }}>
-                          <strong>BOOKS</strong>
-                        </span>
-                      </Link>
-                      <p>
-                        On my free time, I read a ton of{' '}
-                        <a href="https://trello.com/b/0SUpWrLd"> books</a>{' '}
-                        ranging from contemporary fiction, narrative
-                        non-fiction, and the occassional young adult novel. My
-                        favorite authors include Jack Kerouac, Cixin Liu, Andre
-                        Aciman, Herman Hesse, and Ted Chiang. I'm aiming to have
-                        all of my book notes and highlights to be digitized and
-                        published here.
-                      </p>
-                    </div>
-                    <div style={{ textAlign: 'center', paddingTop: rhythm(1) }}>  
-                      <LabelTag value="Latest Highlight"></LabelTag>
-                      <div
-                        style={{
-                          fontSize: '25px',
-                          paddingBottom: rhythm(1),
-                        }}
-                      >
-                        <em>
-                          "There's no protecting anyone. Keeping people safe is
-                          a story we tell ourselves."
-                        </em>
-                      </div>
-                      <div>
-                        <strong>COMMONWEALTH</strong>
-                        <p>
-                          <em>by Ann Pachett</em>
-                        </p>
-                      </div>
-                    </div>
-                  </Col>
-                  <Col lg={4}>
-                    <div style={{ 
-                        textAlign: 'center',           
-                        display: 'flex',
-                        justifyContent: 'center',
-                        flexDirection: 'column', 
-                        height: '100%'}}>
-                      <Image
-                        fluid={data.sampleBook.childImageSharp.fluid}
-                      ></Image>
-                    </div>
-                  </Col>
-                </Row>
-                <Row style={{ paddingTop: rhythm(1) }}>
-                  <Col lg={12}>
-                    <div style={{ textAlign: 'center'}}>
-                      <Link to="/books">
-                        <strong>[ view more books ]</strong>
-                      </Link>
-                    </div>
-                  </Col>
-                </Row>
-              </Container>
+              <BooksLanding 
+                image={data.sampleBook.childImageSharp.fluid}
+                title={"Commonwealth"}
+                author={"Ann Patchett"}
+                highlight={"There's no protecting anyone. Keeping people safe is a story we tell ourselves."}
+              />
             </Col>
           </Row>
           <Row>
@@ -171,72 +57,13 @@ class Index extends React.Component {
           </Row>
           <Row style={{ paddingBottom: rhythm(2), paddingTop: rhythm(2) }}>
             <Col lg={12}>
-              <Container>
-                <Row>
-                  <Col lg={12}>
-                    <div style={{ textAlign: 'center' }}>
-                      <Link to="/photos">
-                        <span style={{ fontSize: '40px' }}>
-                          <strong>PHOTOS</strong>
-                        </span>
-                      </Link>
-                      <p>
-                        I also used to want to be a{' '}
-                        <a href="https://letterboxd.com/rgaquino">film</a>{' '}
-                        critic but later realized that I'd rather be immersed in
-                        them. Films from Mike Leigh, Asghar Farhadi, Mike Mills,
-                        Edward Yang, Marco Berger, and Sean Baker have
-                        influenced my life deeply. So instead, I try to practice{' '}
-                        <a href="https://instagram.com/rgaquino">
-                          {' '}
-                          photography
-                        </a>{' '}
-                        when I'm travelling. I'm hoping that through the act of
-                        turning the camera away from myself, like those films, I
-                        learn how to exalt the human condition.
-                      </p>
-                    </div>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col lg={6} offset={{ lg: 3 }}>
-                    <div
-                      style={{ textAlign: 'center', paddingBottom: rhythm(1) }}
-                    >
-                      <Image
-                        fluid={data.samplePhoto.childImageSharp.fluid}
-                      ></Image>
-                    </div>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col lg={10} offset={{ lg: 1 }}>
-                    <div
-                      style={{ textAlign: 'center', paddingTop: rhythm(1 / 2) }}
-                    >
-                      <LabelTag value="Latest Photo"></LabelTag>
-                      <div style={{ fontSize: '25px' }}>
-                        <em>"fish as deep down as possible — understand"</em>
-                      </div>
-                      <div style={{ paddingTop: rhythm(1 / 2) }}>
-                        <strong>SYDNEY, AUSTRALIA (August 2019)</strong>
-                        <p>
-                          <em>Sony a6000 / Sigma 3.5mm f1.4 DC DN</em>
-                        </p>
-                      </div>
-                    </div>
-                  </Col>
-                </Row>
-                <Row style={{ paddingTop: rhythm(1 / 2) }}>
-                  <Col lg={12}>
-                    <div style={{ textAlign: 'center' }}>
-                      <Link to="/photos">
-                        <strong>[ view more photos ]</strong>
-                      </Link>
-                    </div>
-                  </Col>
-                </Row>
-              </Container>
+                <PhotosLanding 
+                  image={data.samplePhoto.childImageSharp.fluid}
+                  caption={"fish as deep down as possible — understand"}
+                  date={"August 2019"}
+                  location={"Sydney, Australia"}
+                  gear={"Sony a6000 / Sigma 3.5mm f1.4 DC DN"}
+                />
             </Col>
           </Row>
           <Row>
@@ -246,16 +73,7 @@ class Index extends React.Component {
           </Row>
           <Row style={{ paddingTop: rhythm(2) }}>
             <Col lg={10} offset={{ lg: 1 }}>
-              <div style={{ textAlign: 'center' }}>
-                <p>
-                  I'm aiming to have all of my socials to be aggregated and
-                  displayed on this website. It is currently on active
-                  development and you can find the source code{' '}
-                  <a href="https://github.com/rgaquino/site">here</a>. For the
-                  meantime, if you're interested in working with me, send me a
-                  message or follow me on any of the links below.
-                </p>
-              </div>
+                <ExtraLanding />
             </Col>
           </Row>
           <Row>
@@ -294,7 +112,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 1
+      limit: 2
     ) {
       edges {
         node {
@@ -316,4 +134,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

@@ -1,0 +1,29 @@
+import React, { Component } from 'react';
+import { Container, Row, Col } from 'react-grid-system';
+
+
+
+class ExtraLanding extends Component {
+  render() {
+    return (
+      <Container>
+        <Row>
+          <Col lg={12}>
+            <div style={{ textAlign: 'center' }}>
+                <p>
+                  I'm aiming to have all of my socials to be aggregated and
+                  displayed on this website. It is currently on active
+                  development and you can find the source code{' '}
+                  <a href="https://github.com/rgaquino/site">here</a>. For the
+                  meantime, if you're interested in working with me, send me a
+                  message or follow me on any of the links below.
+                </p>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    );
+  }
+}
+
+export default ExtraLanding;
