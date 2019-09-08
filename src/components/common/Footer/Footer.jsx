@@ -14,7 +14,6 @@ class Footer extends Component {
         style={{
           textAlign: 'center',
           paddingTop: rhythm(3 / 2),
-          paddingBottom: rhythm(3 / 4),
         }}
       >
         <footer>
