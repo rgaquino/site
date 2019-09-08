@@ -1,8 +1,8 @@
 /* Arrow copied from: https://codepen.io/pjwiebe/pen/VmmxpM */
 .arrow {
     box-sizing: border-box;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-style: solid;
     border-color: white;
     border-width: 0px 2px 2px 0px;

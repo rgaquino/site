@@ -1,17 +1,17 @@
 import React from 'react';
-import PlaceholderPage from '../components/layout/PlaceholderPage';
+import PlaceholderLayout from '../components/layout/PlaceholderLayout';
 
 import { BOOKS_PATH } from '../utils/paths';
 
 class BooksIndex extends React.Component {
   render() {
     return (
-      <PlaceholderPage title="Books">
+      <PlaceholderLayout title="Books">
         <p>
           Coming soon. <br/>
           Meanwhile, browse my <a href={BOOKS_PATH}>reading list</a>.
         </p>
-      </PlaceholderPage>
+      </PlaceholderLayout>
     );
   }
 }

@@ -7,7 +7,7 @@ import FullScreenLayout from '../../layout/FullScreenLayout';
 import { HOME_PATH } from '../../../utils/paths';
 import { Container, Row, Col } from 'react-grid-system';
 
-class PlaceholderPage extends Component {
+class PlaceholderLayout extends Component {
   render() {
     const { title, children } = this.props;
     return (
@@ -34,8 +34,8 @@ class PlaceholderPage extends Component {
   }
 }
 
-PlaceholderPage.propTypes = {
+PlaceholderLayout.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-export default PlaceholderPage;
+export default PlaceholderLayout;

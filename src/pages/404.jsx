@@ -1,13 +1,13 @@
 import React from 'react';
 
-import PlaceholderPage from '../components/layout/PlaceholderPage';
+import PlaceholderLayout from '../components/layout/PlaceholderLayout';
 
 class NotFoundPage extends React.Component {
   render() {
     return (
-      <PlaceholderPage title="404 Not Found">
+      <PlaceholderLayout title="404 Not Found">
         That page doesn't exist yet.
-      </PlaceholderPage>
+      </PlaceholderLayout>
     );
   }
 }
