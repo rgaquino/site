@@ -23,10 +23,12 @@ class BlogListItem extends Component {
               height: '100%',
             }}
           >
-            <Image fluid={{ 
-              ...post.frontmatter.hero.childImageSharp.fluid, 
-              aspectRatio: 16 / 9
-            }} />
+            <Image
+              fluid={{
+                ...post.frontmatter.hero.childImageSharp.fluid,
+                aspectRatio: 16 / 9,
+              }}
+            />
           </div>
         </Col>
         <Col lg={7}>
