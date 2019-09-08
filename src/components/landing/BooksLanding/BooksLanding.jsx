@@ -16,7 +16,7 @@ class BooksLanding extends Component {
       <Container>
         <Row>
           <Col lg={8}>
-            <div style={{ textAlign: 'left' }}>
+            <div style={{ textAlign: 'center' }}>
               <Link to={BOOKS_PATH}>
                 <span style={{ fontSize: '40px' }}>
                   <strong>BOOKS</strong>
