@@ -23,7 +23,7 @@ class BooksLanding extends Component {
                 </span>
               </Link>
               <p>
-                On my free time, I read a ton of{' '}
+                In my free time, I read a ton of{' '}
                 <a href={READING_LIST_PATH}> books</a> ranging from contemporary
                 fiction, narrative non-fiction, and the occassional young adult
                 novel. My favorite authors include Jack Kerouac, Cixin Liu,
