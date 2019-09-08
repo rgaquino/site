@@ -7,7 +7,10 @@ class BooksIndex extends React.Component {
   render() {
     return (
       <PlaceholderPage title="Books">
-        Coming soon. Meanwhile, browse my <a href={BOOKS_PATH}>reading list</a>.
+        <p>
+          Coming soon. <br/>
+          Meanwhile, browse my <a href={BOOKS_PATH}>reading list</a>.
+        </p>
       </PlaceholderPage>
     );
   }

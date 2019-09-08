@@ -30,8 +30,8 @@ class BlogHeader extends Component {
                   backgroundColor: '#fff',
                   paddingLeft: '10px',
                   paddingRight: '10px',
-                  paddingBottom: '3px',
-                  paddingTop: '3px',
+                  paddingBottom: '2.5px',
+                  paddingTop: '2.5px',
                   boxDecorationBreak: 'clone',
                   WebkitBoxDecorationBreak: 'clone',
                 }}
