@@ -13,8 +13,8 @@ class Footer extends Component {
       <div
         style={{
           textAlign: 'center',
-          marginTop: rhythm(3 / 2),
-          marginBottom: rhythm(1),
+          paddingTop: rhythm(3 / 2),
+          paddingBottom: rhythm(3 / 4),
         }}
       >
         <footer>
