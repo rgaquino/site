@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Link } from 'gatsby'
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
 import SEO from '../SEO';
@@ -8,17 +8,17 @@ import { HOME_PATH } from '../../utils/paths';
 
 class PlaceholderPage extends Component {
   render() {
-    const { title, altPath, altPathText, children} = this.props;
+    const { title, children } = this.props;
     return (
       <Fragment>
         <SEO title={title} />
         <FullScreenLayout style={{ lineHeight: 1.125 }}>
-          <div style={{ fontSize: '4em', textAlign: 'center'}}>
+          <div style={{ fontSize: '4em', textAlign: 'center' }}>
             <Link to={HOME_PATH}>
               <strong>{title.toUpperCase()}</strong>
             </Link>
           </div>
-          <div style={{ textAlign: 'center', fontSize: '1.25em'}}>
+          <div style={{ textAlign: 'center', fontSize: '1.25em' }}>
             {children}
           </div>
         </FullScreenLayout>
@@ -29,7 +29,6 @@ class PlaceholderPage extends Component {
 
 PlaceholderPage.propTypes = {
   title: PropTypes.string.isRequired,
-}
-
+};
 
 export default PlaceholderPage;

@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-grid-system';
 
 import LabelTag from '../LabelTag';
+import Arrow from '../Arrow';
 import { rhythm } from '../../utils/typography';
 import { BLOG_PATH } from '../../utils/paths';
 
@@ -50,6 +51,11 @@ class BlogHeader extends Component {
                 }}
               />
             </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col lg={12}>
+            <Arrow />
           </Col>
         </Row>
       </Container>

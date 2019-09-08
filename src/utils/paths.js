@@ -4,7 +4,7 @@ export const BOOKS_PATH = '/books';
 export const BLOG_PATH = '/blog';
 export const PHOTOS_PATH = '/photos';
 
-// Blog Posts
+// Rocinante
 export const ROCI_INTRO_PATH = '/blog/introducing-rocinante';
 export const ROCI_SOURCE_PATH = 'https://github.com/rgaquino/site';
 

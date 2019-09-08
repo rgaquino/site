@@ -8,7 +8,7 @@ class NotFoundPage extends React.Component {
   render() {
     return (
       <PlaceholderPage title="404 Not Found">
-          That page doesn't exist yet.
+        That page doesn't exist yet.
       </PlaceholderPage>
     );
   }

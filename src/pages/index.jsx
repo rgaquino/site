@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { graphql } from 'gatsby';
 
-
 import SEO from '../components/SEO';
 import FullScreenLayout from '../components/FullScreenLayout';
 
@@ -77,4 +76,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

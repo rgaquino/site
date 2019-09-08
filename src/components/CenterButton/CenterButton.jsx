@@ -8,11 +8,11 @@ class CenterButton extends Component {
   render() {
     return (
       <div
-        style={{ 
-        textAlign: 'center', 
-        paddingTop: rhythm(1),
-        ...this.props.style,
-      }}
+        style={{
+          textAlign: 'center',
+          paddingTop: rhythm(1),
+          ...this.props.style,
+        }}
       >
         <Link to={this.props.to}>
           <strong>[ {this.props.text} ]</strong>
@@ -26,6 +26,6 @@ CenterButton.propTypes = {
   text: PropTypes.string.isRequired,
   to: PropTypes.string.isRequired,
   style: PropTypes.object.isRequired,
-}
+};
 
 export default CenterButton;

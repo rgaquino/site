@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { rhythm } from '../../utils/typography';
 import { GITHUB_PATH, LINKEDIN_PATH, INSTAGRAM_PATH } from '../../utils/paths';
 
-
 class Footer extends Component {
   render() {
     return (

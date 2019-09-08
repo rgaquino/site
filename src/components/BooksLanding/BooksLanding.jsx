@@ -16,7 +16,7 @@ class BooksLanding extends Component {
       <Container>
         <Row>
           <Col lg={8}>
-            <div style={{ textAlign: 'left'}}>
+            <div style={{ textAlign: 'left' }}>
               <Link to={BOOKS_PATH}>
                 <span style={{ fontSize: '40px' }}>
                   <strong>BOOKS</strong>
@@ -24,16 +24,15 @@ class BooksLanding extends Component {
               </Link>
               <p>
                 On my free time, I read a ton of{' '}
-                <a href={READING_LIST_PATH}> books</a>{' '}
-                ranging from contemporary fiction, narrative
-                non-fiction, and the occassional young adult novel. My
-                favorite authors include Jack Kerouac, Cixin Liu, Andre
-                Aciman, Herman Hesse, and Ted Chiang. I'm aiming to have
+                <a href={READING_LIST_PATH}> books</a> ranging from contemporary
+                fiction, narrative non-fiction, and the occassional young adult
+                novel. My favorite authors include Jack Kerouac, Cixin Liu,
+                Andre Aciman, Herman Hesse, and Ted Chiang. I'm aiming to have
                 all of my book notes and highlights to be digitized and
                 published here.
               </p>
             </div>
-            <div style={{ textAlign: 'center', paddingTop: rhythm(1) }}>  
+            <div style={{ textAlign: 'center', paddingTop: rhythm(1) }}>
               <LabelTag value="Latest Highlight"></LabelTag>
               <div
                 style={{
@@ -52,12 +51,15 @@ class BooksLanding extends Component {
             </div>
           </Col>
           <Col lg={4}>
-            <div style={{ 
-                textAlign: 'center',           
+            <div
+              style={{
+                textAlign: 'center',
                 display: 'flex',
                 justifyContent: 'center',
-                flexDirection: 'column', 
-                height: '100%'}}>
+                flexDirection: 'column',
+                height: '100%',
+              }}
+            >
               <Image fluid={this.props.image} />
             </div>
           </Col>
@@ -77,6 +79,6 @@ BooksLanding.propTypes = {
   author: PropTypes.string.isRequired,
   image: PropTypes.object.isRequired,
   highlight: PropTypes.string.isRequired,
-}
+};
 
 export default BooksLanding;

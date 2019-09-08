@@ -13,13 +13,14 @@ class LandingPages extends Component {
   render() {
     const { data } = this.props;
 
+    // TODO: These rows should be rendered automatically by looping all the pages.
     return (
       <Container id="content">
-        <Row style={{ paddingBottom: rhythm(2), paddingTop: rhythm(2)}}>
-            <Col lg={12}>
-              <BlogLanding posts={data.allMarkdownRemark.edges}/>
-            </Col>
-          </Row>
+        <Row style={{ paddingBottom: rhythm(2), paddingTop: rhythm(2) }}>
+          <Col lg={12}>
+            <BlogLanding posts={data.allMarkdownRemark.edges} />
+          </Col>
+        </Row>
         <Row>
           <Col lg={12}>
             <hr />
@@ -27,7 +28,7 @@ class LandingPages extends Component {
         </Row>
         <Row style={{ paddingBottom: rhythm(2), paddingTop: rhythm(2) }}>
           <Col lg={12}>
-            <BooksLanding 
+            <BooksLanding
               image={data.sampleBook.childImageSharp.fluid}
               title="Commonwealth"
               author="Ann Patchett"
@@ -42,7 +43,7 @@ class LandingPages extends Component {
         </Row>
         <Row style={{ paddingBottom: rhythm(2), paddingTop: rhythm(2) }}>
           <Col lg={12}>
-            <PhotosLanding 
+            <PhotosLanding
               image={data.samplePhoto.childImageSharp.fluid}
               caption="fish as deep down as possible — understand"
               date="August 2019"

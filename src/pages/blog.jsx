@@ -18,14 +18,14 @@ class BlogIndex extends React.Component {
         <SEO title="Blog" />
         <Container>
           <Row>
-            <Col lg={12} >
+            <Col lg={12}>
               <Navbar />
             </Col>
           </Row>
           <Row>
             <Col lg={12} style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '8em' }}>
-                  <strong>BLOG</strong>
+                <strong>BLOG</strong>
               </div>
               <p>
                 I'm using this website as a command center for my digital life
@@ -35,11 +35,10 @@ class BlogIndex extends React.Component {
                 </Link>
                 , with the end goal of having expertise on multiple web
                 development stacks and not get overwhelmed by how much there is
-                to learn. I'm blogging about the steps
-                of building this website from design to implementation to both
-                track my progress and as a way for others to learn from them. I
-                believe in the value of not erasing our own learning arc by
-                never feigning perfection.
+                to learn. I'm blogging about the steps of building this website
+                from design to implementation to both track my progress and as a
+                way for others to learn from them. I believe in the value of not
+                erasing our own learning arc by never feigning perfection.
               </p>
             </Col>
           </Row>
