@@ -10,10 +10,10 @@ class Intro extends Component {
       <Container>
         <Row>
           <Col lg={12}>
-            <div style={{ fontSize: '8em' }}>
+            <div style={{ fontSize: '15vmin' }}>
               <strong>Hi, I'm RG.</strong>
             </div>
-            <p style={{ fontSize: '20px' }}>
+            <p style={{ fontSize: '1.25em' }}>
               I'm a Software Engineer based in Singapore currently writing
               backend code for{' '}
               <a href={WORK_PATH}>

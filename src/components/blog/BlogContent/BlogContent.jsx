@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { DiscussionEmbed } from 'disqus-react';
 import { Container, Row, Col } from 'react-grid-system';
 
+import { BLOG_PATH } from '../../../utils/paths';
+
 class BlogContent extends Component {
   render() {
     const { post, style } = this.props;
@@ -12,7 +14,7 @@ class BlogContent extends Component {
     const disqusConfig = {
       url: post.frontmatter.disqusURL
         ? post.frontmatter.disqusURL
-        : `${process.env.BASE_URL}/blog/${post.frontmatter.id}`,
+        : `${process.env.BASE_URL}${BLOG_PATH}/${post.frontmatter.id}`,
       identifier: post.frontmatter.id,
       title: post.frontmatter.title,
     };

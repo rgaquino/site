@@ -14,7 +14,7 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
     return (
-      <div>
+      <div style={{ backgroundColor: '#F7F7F7'}}>
         <SEO title="Blog" />
         <Container>
           <Row>
@@ -24,7 +24,7 @@ class BlogIndex extends React.Component {
           </Row>
           <Row>
             <Col lg={12} style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '8em' }}>
+              <div style={{ fontSize: '15vmin' }}>
                 <strong>BLOG</strong>
               </div>
               <p>

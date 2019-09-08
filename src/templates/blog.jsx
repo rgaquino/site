@@ -13,7 +13,7 @@ class Blog extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     return (
-      <Fragment>
+      <div>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -31,7 +31,7 @@ class Blog extends React.Component {
           }}
         />
         <Footer />
-      </Fragment>
+      </div>
     );
   }
 }
