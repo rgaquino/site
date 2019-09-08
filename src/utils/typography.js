@@ -1,7 +1,7 @@
 import Typography from 'typography';
 import GrandView from 'typography-theme-grand-view';
 
-GrandView.overrideThemeStyles = () => {
+GrandView.overrideThemeStyles = ({ rhythm }) => {
   return {
     'a.gatsby-resp-image-link': {
       boxShadow: `none`,

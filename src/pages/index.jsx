@@ -1,30 +1,30 @@
-import React from 'react';
-import { graphql, Link } from 'gatsby';
-import ReactFullpage from '@fullpage/react-fullpage';
+import React, { Fragment } from 'react';
+import { graphql } from 'gatsby';
 
-import SEO from '../components/SEO';
+import SEO from '../components/common/SEO';
+import FullScreenLayout from '../components/layout/FullScreenLayout';
 
-import '../css/styles.css';
-import Intro from '../components/Intro';
+import Footer from '../components/common/Footer';
+import Intro from '../components/landing/Intro';
+import LandingPages from '../components/landing/LandingPages';
 
 class Index extends React.Component {
   render() {
     return (
-      <ReactFullpage
-        scrollOverflow={true}
-        scrollingSpeed={1000}
-        sectionsColor={['#e2e4e2', '#afaae1']}
-        render={({ fullpageApi }) => {
-          return (
-            <ReactFullpage.Wrapper>
-              <SEO title="Home" />
-              <div className="section">
-                <Intro />
-              </div>
-            </ReactFullpage.Wrapper>
-          );
-        }}
-      />
+      <Fragment>
+        <SEO />
+        <FullScreenLayout
+          style={{
+            textAlign: 'center',
+            backgroundColor: '#242424',
+            color: '#fff',
+          }}
+        >
+          <Intro />
+        </FullScreenLayout>
+        <LandingPages data={this.props.data} />
+        <Footer />
+      </Fragment>
     );
   }
 }
@@ -38,17 +38,39 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    samplePhoto: file(relativePath: { eq: "sydney.jpg" }) {
+      childImageSharp {
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    sampleBook: file(relativePath: { eq: "commonwealth.jpg" }) {
+      childImageSharp {
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 2
+    ) {
       edges {
         node {
           excerpt
-          fields {
-            slug
-          }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            id
+            date(formatString: "DD MMMM YYYY")
             title
             description
+            hero {
+              childImageSharp {
+                fluid(quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

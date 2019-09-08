@@ -1,46 +1,52 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import Hero from '../components/Hero';
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
-import { rhythm } from '../utils/typography';
+import SEO from '../components/common/SEO';
+import { Container, Row, Col } from 'react-grid-system';
+
+import Footer from '../components/common/Footer';
+import BlogList from '../components/blog/BlogList';
+import Navbar from '../components/common/Navbar';
+
+import { ROCI_INTRO_PATH } from '../utils/paths';
 
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props;
-    const siteTitle = data.site.siteMetadata.title;
-    const posts = data.allMarkdownRemark.edges;
-
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <div>
         <SEO title="Blog" />
-        <Hero />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title;
-          return (
-            <div>
-                <article key={node.frontmatter.id}>       
-                  <header>
-                    <h3 style={{ marginBottom: rhythm(1 / 4) }}>
-                      <Link style={{ boxShadow: `none` }} to={`/blog/${node.frontmatter.id}`}>
-                        {title}
-                      </Link>
-                    </h3>
-                    <small>{node.frontmatter.date}</small>
-                  </header>
-                  <section>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: node.frontmatter.description || node.excerpt,
-                      }}
-                    />
-                  </section>
-                </article>
-            </div>
-          );
-        })}
-      </Layout>
+        <Container>
+          <Row>
+            <Col lg={12}>
+              <Navbar />
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={12} style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '15vmin' }}>
+                <strong>BLOG</strong>
+              </div>
+              <p>
+                I'm using this website as a command center for my digital life
+                and as a way to learn new tech as they come. I'm calling it{' '}
+                <Link to={ROCI_INTRO_PATH}>
+                  <strong>The Rocinante Project</strong>
+                </Link>
+                , with the end goal of having expertise on multiple web
+                development stacks and not get overwhelmed by how much there is
+                to learn. I'm blogging about the steps of building this website
+                from design to implementation to both track my progress and as a
+                way for others to learn from them. I believe in the value of not
+                erasing our own learning arc by never feigning perfection.
+              </p>
+            </Col>
+          </Row>
+          <hr />
+          <BlogList posts={data.allMarkdownRemark.edges} />
+        </Container>
+        <Footer />
+      </div>
     );
   }
 }
@@ -60,16 +66,13 @@ export const pageQuery = graphql`
           excerpt
           frontmatter {
             id
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD MMMM YYYY")
             title
             description
             hero {
               childImageSharp {
-                resize(width: 300) {
-                  src
-                }
-                original {
-                  src
+                fluid(quality: 100) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

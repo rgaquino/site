@@ -1,6 +1,6 @@
 const path = require(`path`);
 
-const TEMPLATE_PATH = `./src/templates/blog-post.jsx`;
+const TEMPLATE_PATH = `./src/templates/blog.jsx`;
 const POST_QUERY = `
 {
     allMarkdownRemark(

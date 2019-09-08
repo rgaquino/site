@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-env-variables`,
       options: {
-        whitelist: ["BASE_URL", "DISQUS_ID"]
+        whitelist: ['BASE_URL', 'DISQUS_ID'],
       },
     },
     {
@@ -24,6 +24,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/photos`,
+        name: `photos`,
       },
     },
     {
