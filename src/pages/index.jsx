@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { graphql } from 'gatsby';
 
 
@@ -9,12 +9,10 @@ import Footer from '../components/Footer';
 import Intro from '../components/Intro';
 import LandingPages from '../components/LandingPages';
 
-
-
 class Index extends React.Component {
   render() {
     return (
-      <div style={{ scrollBehavior: 'smooth' }}>
+      <Fragment>
         <SEO />
         <FullScreenLayout
           style={{
@@ -27,7 +25,7 @@ class Index extends React.Component {
         </FullScreenLayout>
         <LandingPages data={this.props.data} />
         <Footer />
-      </div>
+      </Fragment>
     );
   }
 }
