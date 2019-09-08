@@ -1,8 +1,8 @@
 ---
 id: 'book-review-january-2019'
-title: 'Book Review: January 2019'
+title: 'January 2019 Book Review'
 date: '2019-03-05T22:12:03.284Z'
-description: "A review of the books I've read in January 2019."
+description: "This year, I'm attempting to read at least one book per week. Here's a review of all the books that I read for the month of January."
 hero: './hero.jpeg'
 ---
 
@@ -11,8 +11,8 @@ In an attempt to actually follow through my "one book per week" goal, a goal tha
 ---
 
 ## Week 1: January 1–6
-# AI Superpowers: China, Silicon Valley, and the New World Order (Kai-Fu Lee) [Non-Fiction]
-![AI Superpowers: China, Silicon Valley, and the New World Order (Kai-Fu Lee)](./ai-superpowers.png)
+# [Kai-Fu Lee, "AI Superpowers: China, Silicon Valley, and the New World Order"](https://www.amazon.com/AI-Superpowers-China-Silicon-Valley-ebook/dp/B0795DNWCF)
+![Kai-Fu Lee, "AI Superpowers: China, Silicon Valley, and the New World Order"](./ai-superpowers.png)
 
 > "While Socrates encouraged his students to seek truth by questioning everything, ancient Chinese philosophers counseled people to follow the rituals of sages from the ancient past. Rigorous copying of perfection was seen as the route to true mastery."
 
@@ -23,20 +23,20 @@ The book starts strong by shedding light to how the Chinese see technology and t
 ---
 
 ## Week 2: January 7–13
-# The Song of Achilles (Madeline Miller) [Fiction]
-![The Song of Achilles (Madeline Miller) ](./song-of-achilles.png)
+# [Madeline Miller, "The Song of Achilles"](https://www.amazon.com/Song-Achilles-Novel-Madeline-Miller-ebook/dp/B006IE2IO8)
+![Madeline Miller, "The Song of Achilles"](./song-of-achilles.png)
 
 > "He said what he meant; he was puzzled if you did not. Some people might have mistaken this for simplicity. But is it not a sort of genius to cut always to the heart?"
 
-When I was a freshman in college, I had to prepare a presentation on a few parts of Homer's _Iliad_ for my world literature class. It wasn't the first time that I had to read the epic for school, it also being a required reading in 7th grade. But it was the first time that I had Wikipedia and the first time that I encountered the interpretation that Patroclus and Achilles had a deeper relationship than what was presented to me by my high school teacher and the 2004 film adaptation _Troy_. I remember spending more than half of the allotted presentation time discussing how the relationship should be rightfully perceived - was it _paiderasteia_ or just simply same-sex love - not realizing that I was projecting my own conflicted sexual desires in the process to an audience consisted primarily of political science majors (I was an engineering student) and my horrified English professor. 
+When I was a freshman in college, I had to prepare a presentation on a few parts of Homer's _Iliad_ for my world literature class. It wasn't the first time that I had to read the epic for school, it also being a required reading in 7th grade. But it was the first time that I had Wikipedia and the first time that I encountered the interpretation that Patroclus and Achilles had a deeper relationship than what was presented to me by my high school teacher and the 2004 film adaptation _Troy_. I remember spending more than half of the allotted presentation time discussing how the relationship should be rightfully perceived -- was it _paiderasteia_ or just simply same-sex love -- not realizing that I was projecting my own conflicted sexual desires in the process to an audience consisted primarily of political science majors (I was an engineering student) and my horrified English professor. 
 
 A decade later and a few years after I've accepted that I too identify as non-binary (duh), I meet a book with the love between Patroclus and Achilles in full view, with all the romance and hope that a coming-of-age novel promises. I can't help but feel sad that I didn't have it as a teenager, but reading it gave me more than the cathartic vindication I wanted to have: it felt like a familiar melody that I carried with me all along.
 
 ---
 
 ## Week 3: January 14–20
-# Becoming (Michelle Obama) [Non-Fiction]
-![Becoming (Michelle Obama)](./becoming.png)
+# [Michelle Obama, "Becoming"](https://www.amazon.com/Song-Achilles-Novel-Madeline-Miller-ebook/dp/B006IE2IO8)
+![Michelle Obama, "Becoming"](./becoming.png)
  
 > "It was one thing to get yourself out of a stuck place, I realized. It was another thing entirely to try and get the place itself unstuck."
 
@@ -45,9 +45,9 @@ Who knew that a lower middle class Filipino boy, raised by a single mom in a tow
 ---
 
 ## Week 4: January 21–27
-# Severance (Ling Ma) [Fiction]
-![Severance (Ling Ma)](./severance.png)
+# [Ling Ma, "Severance"](https://www.amazon.com/Severance-Novel-Ling-Ma-ebook/dp/B078X1KJ28)
+![Ling Ma, "Severance"](./severance.png)
 
 I only just recently realized that the books that have influenced my life the most are the few books that I've read by authors of Asian descent. The list includes: _A Little Life_ (Hanya Yanagihara), _Private Citizens_ (Tony Tullathimute), The _Remembrance of Earth's Past_ Trilogy (Cixin Liu), _Pachinko_ (Min Jin Lee), and the collected works of science fiction writers Ken Liu and Ted Chiang. Not to mention Fumio Sasaki's _Goodbye, Things_ which I read last year in an uncharacteristic turn of actually picking up a self-help book. For a Filipino who unabashedly thinks that he is educated like an American, speaks like an American, and even jokes on Reddit like an American, this realization was mind-blowing and a hard slap on the face. 
 
-Like the protagonist of Ling Ma's _Severance_ I too had high regard for the romance and glamour of New York (and consequently, America), never having set foot in it and yet fed by the media that I consume that I should. Now that I am aware of how conditioned I am to uphold Western institutions and ideals, ignoring and even belittling the Eastern values that are better representations of my upbringing, I felt detached reading this book early on. I read it on flights to and from Bali, wanting but never getting over the disgust of reading about a character obsessed with her individual well-being over her community's and has a lazy relationship with globalization even though she's in the midst of it - tenets of an Asian too American to care. Maybe that's the point the author was trying to make, to see myself in the character and try to steer my life the other way. I just wish I remembered how it ends.
+Like the protagonist of Ling Ma's _Severance_ I too had high regard for the romance and glamour of New York (and consequently, America), never having set foot in it and yet fed by the media that I consume that I should. Now that I am aware of how conditioned I am to uphold Western institutions and ideals, ignoring and even belittling the Eastern values that are better representations of my upbringing, I felt detached reading this book early on. I read it on flights to and from Bali, wanting but never getting over the disgust of reading about a character obsessed with her individual well-being over her community's and has a lazy relationship with globalization even though she's in the midst of it -- tenets of an Asian too American to care. Maybe that's the point the author was trying to make, to see myself in the character and try to steer my life the other way. I just wish I remembered how it ends.
