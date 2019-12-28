@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'gatsby-image';
+import { Link } from 'gatsby';
 
 import SEO from '../components/common/SEO';
 
@@ -49,7 +50,9 @@ class BooksIndex extends React.Component {
                   <br/>
                   <div style={{textAlign: 'center'}}>
                     <em>{node.lastFinishedAt}</em><br/>
-                    <strong>{node.title}</strong>
+                    <Link to={`/books/${node.id}`}>
+                      <strong>{node.title}</strong>
+                    </Link>
                     <p>{node.author}</p>
                   </div>
                 </Col>
@@ -66,7 +69,7 @@ class BooksIndex extends React.Component {
 export default BooksIndex;
 
 export const pageQuery = graphql`
-  query MyQuery {
+  query {
     site {
       siteMetadata {
         title
@@ -75,6 +78,7 @@ export const pageQuery = graphql`
     allBooks(filter: {lastFinishedAt: {ne: null}}, sort: { fields: [lastFinishedAt], order: DESC }) {
       edges {
         node {
+          id
           title
           author
           highlights

@@ -1,6 +1,7 @@
 const path = require(`path`);
 
-const TEMPLATE_PATH = `./src/templates/blog.jsx`;
+const BLOG_TEMPLATE_PATH = `./src/templates/blog.jsx`;
+const BOOK_TEMPLATE_PATH = `./src/templates/book.jsx`;
 const POST_QUERY = `
 {
     allMarkdownRemark(
@@ -18,12 +19,25 @@ const POST_QUERY = `
                 }
             }
         }
+    },
+    allBooks(
+      filter: { lastFinishedAt: {ne: null} }, 
+      sort: { fields: [lastFinishedAt], order: DESC }
+    ) {
+      edges {
+        node {
+          id
+          title
+          author
+          highlights
+          lastFinishedAt(formatString: "DD MMMM YYYY")
+        }
+      }
     }
 }`;
 
 module.exports = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const blogPost = path.resolve(TEMPLATE_PATH);
   const result = await graphql(POST_QUERY);
 
   if (result.errors) {
@@ -31,6 +45,7 @@ module.exports = async ({ graphql, actions }) => {
   }
 
   // Create blog posts pages.
+  const blogTemplate = path.resolve(BLOG_TEMPLATE_PATH);
   const posts = result.data.allMarkdownRemark.edges;
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node;
@@ -38,9 +53,27 @@ module.exports = async ({ graphql, actions }) => {
 
     createPage({
       path: `/blog/${post.node.frontmatter.id}`,
-      component: blogPost,
+      component: blogTemplate,
       context: {
         slug: post.node.fields.slug,
+        previous,
+        next,
+      },
+    });
+  });
+
+  // Create book pages.
+  const bookTemplate = path.resolve(BOOK_TEMPLATE_PATH);
+  const books = result.data.allBooks.edges;
+  books.forEach((book, index) => {
+    const previous = index === books.length - 1 ? null : books[index + 1].node;
+    const next = index === 0 ? null : books[index - 1].node;
+
+    createPage({
+      path: `/books/${book.node.id}`,
+      component: bookTemplate,
+      context: {
+        id: book.node.id,
         previous,
         next,
       },
