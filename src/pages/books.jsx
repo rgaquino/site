@@ -10,6 +10,7 @@ import { rhythm } from '../utils/typography';
 
 import Footer from '../components/common/Footer';
 import Navbar from '../components/common/Navbar';
+import LabelTag from '../components/common/LabelTag';
 
 import { READING_LIST_PATH } from '../utils/paths';
 
@@ -45,12 +46,11 @@ class BooksIndex extends React.Component {
           <Row style={{ paddingTop: rhythm(2) }}>
           {data.allBooks.edges.map(({ node }) => {
             return (
-                <Col lg={3}>
-                   <em>{node.lastFinishedAt}</em><br/>
-                  <Image fluid={data.sampleBook.childImageSharp.fluid} />
+                <Col lg={3} style={{textAlign: 'center'}}>
+                  <LabelTag value={node.lastFinishedAt} />
+                  <img src={node.imageLink} style={{ objectFit: 'cover ', height: 350 }}/>
                   <br/>
-                  <div style={{textAlign: 'center'}}>
-            
+                  <div>
                     <Link to={`/books/${node.id}`}>
                       <strong>{node.title}</strong>
                     </Link>
@@ -83,6 +83,7 @@ export const pageQuery = graphql`
           title
           author
           highlights
+          imageLink
           lastFinishedAt(formatString: "DD MMMM YYYY")
         }
       }

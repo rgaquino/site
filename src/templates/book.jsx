@@ -15,7 +15,6 @@ class Book extends React.Component {
     if (book.highlights == null) {
       book.highlights = [];
     }
-
     const title = `${book.title} by ${book.author}`;
     return (
       <Fragment>
@@ -23,18 +22,17 @@ class Book extends React.Component {
         <Container>
           <Row style={{ paddingTop: rhythm(2) }}>
             <Col lg={4} offset={{ lg: 4 }} style={{ textAlign: "center" }}>
-              <Image fluid={this.props.data.sampleBook.childImageSharp.fluid} />
+              <LabelTag value={book.lastFinishedAt} />
+              <img src={book.imageLink} />
             </Col>
           </Row>
           <Row
             style={{
-              paddingTop: rhythm(2),
               paddingBottom: rhythm(2),
               textAlign: "center"
             }}
           >
-            <Col lg={12} style={{}}>
-              <LabelTag value={book.lastFinishedAt} />
+            <Col lg={12}>
               <div
                 style={{
                   fontSize: "35px",
@@ -45,11 +43,11 @@ class Book extends React.Component {
                 <Link to={`/books`}>
                   <strong>{book.title}</strong>
                 </Link>
-                <br/>
+                <br />
                 <span
                   style={{
                     fontSize: "25px",
-                    color: "#000",
+                    color: "#000"
                   }}
                 >
                   <em>{book.subtitle}</em>
@@ -58,15 +56,34 @@ class Book extends React.Component {
               <div>
                 <span>by {book.author}</span>
               </div>
+              <div>
+                <span>Category: {book.category}</span>
+              </div>
+              <div>
+                <span>ISBN: {book.isbn}</span>
+              </div>
+              <div>
+                <span>Publisher: {book.publisher}</span>
+              </div>
+              <div>
+                <span>Page Count: {book.pageCount} pages</span>
+              </div>
             </Col>
           </Row>
           <hr />
-          <Row style={{ paddingTop: rhythm(2), textAlign: "justify" }}>
+          <Row style={{ textAlign: "justify" }}>
             <Col lg={10} offset={{ lg: 1 }}>
+              <h2>Highlights</h2>
               {book.highlights.map(highlight => {
                 return (
                   <Fragment>
-                    <p>{highlight}</p>
+                    <p>
+                      <article>
+                        <section
+                          dangerouslySetInnerHTML={{ __html: highlight }}
+                        />
+                      </article>
+                    </p>
                   </Fragment>
                 );
               })}
@@ -91,18 +108,16 @@ export const pageQuery = graphql`
     }
     books(id: { eq: $id }) {
       id
+      isbn
       title
       subtitle
       author
+      category
       highlights
+      publisher
+      pageCount
+      imageLink
       lastFinishedAt(formatString: "DD MMMM YYYY")
-    }
-    sampleBook: file(relativePath: { eq: "commonwealth.jpg" }) {
-      childImageSharp {
-        fluid(quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
     }
   }
 `;
