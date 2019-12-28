@@ -6,7 +6,7 @@ import Image from 'gatsby-image';
 
 import { rhythm } from '../../../utils/typography';
 
-import LabelTag from '../../common/LabelTag/index';
+import LabelTag from '../../common/LabelTag';
 
 class BlogListItem extends Component {
   render() {

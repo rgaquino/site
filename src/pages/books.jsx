@@ -46,10 +46,11 @@ class BooksIndex extends React.Component {
           {data.allBooks.edges.map(({ node }) => {
             return (
                 <Col lg={3}>
+                   <em>{node.lastFinishedAt}</em><br/>
                   <Image fluid={data.sampleBook.childImageSharp.fluid} />
                   <br/>
                   <div style={{textAlign: 'center'}}>
-                    <em>{node.lastFinishedAt}</em><br/>
+            
                     <Link to={`/books/${node.id}`}>
                       <strong>{node.title}</strong>
                     </Link>
