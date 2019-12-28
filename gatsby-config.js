@@ -1,3 +1,8 @@
+const activeEnv =
+  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development"
+require("dotenv").config({
+  path: `.env.${activeEnv}`,
+})
 module.exports = {
   siteMetadata: {
     title: `Ralph Gregor Aquino`,
@@ -64,6 +69,18 @@ module.exports = {
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
         respectDNT: false,
       },
+    },
+    {
+      resolve: 'gatsby-source-dynamodb',
+      options: {
+        typeName: 'books',
+        accessKeyId: process.env.DYNAMODB_ACCESS_KEY,
+        secretAccessKey: process.env.DYNAMODB_SECRET_KEY,
+        region: process.env.DYNAMODB_REGION,
+        params: {
+          TableName : "rocinante-books",
+        }
+      }
     },
     `gatsby-plugin-feed`,
     {
