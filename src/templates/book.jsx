@@ -18,16 +18,32 @@ class Book extends React.Component {
         <Row style={{ textAlign: "justify" }}>
           <Col lg={10} offset={{ lg: 1 }}>
             <h2>Highlights</h2>
-            {book.highlights.map(highlight => {
+            {book.highlights.map((highlight, idx) => {
+              var sep;
+              if (idx != book.highlights.length - 1) {
+                sep = (
+                  <div
+                    style={{
+                      fontSize: "1.25em",
+                      textAlign: "center",
+                      paddingTop: rhythm(1),
+                      paddingBottom: rhythm(1)
+                    }}
+                  >
+                    <span>. . .</span>
+                  </div>
+                );
+              }
               return (
                 <Fragment>
-                  <p>
+                  <div>
                     <article>
                       <section
                         dangerouslySetInnerHTML={{ __html: highlight }}
                       />
                     </article>
-                  </p>
+                  </div>
+                  {sep}
                 </Fragment>
               );
             })}
