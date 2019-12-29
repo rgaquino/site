@@ -27,6 +27,7 @@ const POST_QUERY = `
       edges {
         node {
           id
+          slug
           title
           author
           highlights
@@ -70,10 +71,10 @@ module.exports = async ({ graphql, actions }) => {
     const next = index === 0 ? null : books[index - 1].node;
 
     createPage({
-      path: `/books/${book.node.id}`,
+      path: `/books/${book.node.slug}`,
       component: bookTemplate,
       context: {
-        id: book.node.id,
+        slug: book.node.slug,
         previous,
         next,
       },

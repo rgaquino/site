@@ -43,15 +43,17 @@ class BooksIndex extends React.Component {
             </Col>
           </Row>
           <hr />
-          <Row style={{ paddingTop: rhythm(2) }}>
+          <Row>
           {data.allBooks.edges.map(({ node }) => {
+            const imageLink = `${process.env.BOOK_IMAGE_BASE_URL}/${node.slug}.jpg`;
             return (
-                <Col lg={3} style={{textAlign: 'center'}}>
+                <Col lg={3} style={{textAlign: 'center', paddingTop: rhythm(1.25)}}>
                   <LabelTag value={node.lastFinishedAt} />
-                  <img src={node.imageLink} style={{ objectFit: 'cover ', height: 350 }}/>
-                  <br/>
+                  <Link to={`/books/${node.slug}`}>
+                    <img src={imageLink} style={{ objectFit: 'cover ', height: 285}}/>
+                  </Link>
                   <div>
-                    <Link to={`/books/${node.id}`}>
+                    <Link to={`/books/${node.slug}`}>
                       <strong>{node.title}</strong>
                     </Link>
                     <p>{node.author}</p>
@@ -79,11 +81,10 @@ export const pageQuery = graphql`
     allBooks(filter: {lastFinishedAt: {ne: null}}, sort: { fields: [lastFinishedAt], order: DESC }) {
       edges {
         node {
-          id
+          slug
           title
           author
           highlights
-          imageLink
           lastFinishedAt(formatString: "DD MMMM YYYY")
         }
       }
