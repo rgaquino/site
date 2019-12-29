@@ -32,12 +32,7 @@ class BooksIndex extends React.Component {
                 <strong>BOOKS</strong>
               </div>
               <p>
-                <strong>"Reading changes our lives, and our lives change our reading."</strong>
-                <br />
-                Maryanne Wolf, <em>Proust and the Squid</em>
-              </p>
-              <p>
-                Here's a list of all the books that I've read throughout the years. 
+                Here's a list of all the books that I've read throughout the years. Inspired by <a href="https://highlights.sawyerh.com">Sawyer Hollenshead</a> and <a href="https://patrickcollison.com/bookshelf">Patrick Collison</a>'s lists,
                 I'm aiming to transcribe all of my highlights and book notes and aggregate them on this page.
                 You can also check out what's next on my reading list <a href={READING_LIST_PATH}> here</a>.
               </p>
