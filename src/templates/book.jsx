@@ -15,7 +15,7 @@ class Book extends React.Component {
     var highlights;
     if (book.highlights != null) {
       highlights = (
-        <Row style={{ textAlign: "justify" }}>
+        <Row>
           <Col lg={10} offset={{ lg: 1 }}>
             <h2>Highlights</h2>
             {book.highlights.map((highlight, idx) => {
@@ -26,8 +26,8 @@ class Book extends React.Component {
                     style={{
                       fontSize: "1.25em",
                       textAlign: "center",
-                      paddingTop: rhythm(1),
-                      paddingBottom: rhythm(1)
+                      paddingTop: rhythm(3 / 4),
+                      paddingBottom: rhythm(3 / 4)
                     }}
                   >
                     <span>. . .</span>
@@ -100,6 +100,7 @@ class Book extends React.Component {
           <hr />
           {highlights}
         </Container>
+        <br />
         <Footer />
       </Fragment>
     );

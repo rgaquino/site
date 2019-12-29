@@ -47,7 +47,7 @@ class BooksIndex extends React.Component {
           {data.allBooks.edges.map(({ node }) => {
             const imageLink = `${process.env.BOOK_IMAGE_BASE_URL}/${node.slug}.jpg`;
             return (
-                <Col lg={3} style={{textAlign: 'center', paddingTop: rhythm(1.25)}}>
+                <Col lg={3} sm={6} style={{textAlign: 'center', paddingTop: rhythm(1.25)}}>
                   <LabelTag value={node.lastFinishedAt} />
                   <Link to={`/books/${node.slug}`}>
                     <img src={imageLink} style={{ objectFit: 'cover ', height: 285}}/>
