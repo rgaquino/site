@@ -32,13 +32,14 @@ class BooksIndex extends React.Component {
                 <strong>BOOKS</strong>
               </div>
               <p>
-              In my free time, I read a ton of{' '}
-                <a href={READING_LIST_PATH}> books</a> ranging from contemporary
-                fiction, narrative non-fiction, and the occassional young adult
-                novel. My favorite authors include Jack Kerouac, Cixin Liu,
-                Andre Aciman, Herman Hesse, and Ted Chiang. I'm aiming to have
-                all of my book notes and highlights to be digitized and
-                published here.
+                <strong>"Reading changes our lives, and our lives change our reading."</strong>
+                <br />
+                Maryanne Wolf, <em>Proust and the Squid</em>
+              </p>
+              <p>
+                Here's a list of all the books that I've read throughout the years. 
+                I'm aiming to transcribe all of my highlights and book notes and aggregate them on this page.
+                You can also check out what's next on my reading list <a href={READING_LIST_PATH}> here</a>.
               </p>
             </Col>
           </Row>
