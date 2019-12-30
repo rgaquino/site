@@ -49,9 +49,9 @@ class BookContent extends Component {
     }
 
     return (
-        <Fragment>
-          {highlights}
-        </Fragment>
+      <Container style={style}>
+        {highlights}
+      </Container>
     );
   }
 }

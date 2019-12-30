@@ -17,10 +17,8 @@ class Book extends React.Component {
     return (
       <Fragment>
         <SEO title={title} />
-        <Container>
-          <BookHeader book={book} />
-          <BookContent book={book} />
-        </Container>
+        <BookHeader book={book} />
+        <BookContent book={book} />
         <br />
         <Footer />
       </Fragment>
