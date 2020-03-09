@@ -15,7 +15,7 @@ class BlogList extends Component {
   }
 }
 
-BlogListItem.propTypes = {
+BlogList.propTypes = {
   posts: PropTypes.object.isRequired,
 };
 
