@@ -730,6 +730,13 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@babel/runtime@^7.6.2":
+  version "7.6.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.3.tgz#935122c74c73d2240cafd32ddb5fc2a6cd35cf1f"
+  integrity sha512-kq6anf9JGjW8Nt5rYfEuGRaEAaH1mkv3Bbu6rYvLOpPh/RusSJXuKPEAoZ7L7gybZkchE8+NV5g9vKF4AGAtsA==
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/template@^7.1.0", "@babel/template@^7.4.4":
   version "7.4.4"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.4.4.tgz#f4b88d1225689a08f5bc3a17483545be9e4ed237"
@@ -2893,7 +2900,7 @@ commondir@^1.0.1:
   resolved "https://registry.yarnpkg.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
   integrity sha1-3dgA2gxmEnOTzKWVDqloo6rxJTs=
 
-compass-vertical-rhythm@^1.4.5:
+compass-vertical-rhythm@^1.2.1, compass-vertical-rhythm@^1.4.5:
   version "1.4.5"
   resolved "https://registry.yarnpkg.com/compass-vertical-rhythm/-/compass-vertical-rhythm-1.4.5.tgz#4baa8d7068fda164d3675d706775d7547e8750f5"
   integrity sha512-bJo3IYX7xmmZCDYjrT2XolaiNjGZ4E2JvUGxpdU0ecbH4ZLK786wvc8aHKVrGrKct9JlkmJbUi8YLrQWvOc+uA==
@@ -3763,6 +3770,11 @@ dir-glob@2.0.0:
     arrify "^1.0.1"
     path-type "^3.0.0"
 
+disqus-react@^1.0.6:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/disqus-react/-/disqus-react-1.0.7.tgz#61061d3b6237b956baa9c5d96780fd311cdbecfc"
+  integrity sha512-7sPHIauS5mUxkZtGtik/ELZ38kOGH3N+YFNt7U4ncczNdAVmWNmAetDE+dHYnrL1Xx+Pgueh1uKpvfUIeu7WuQ==
+
 dns-equal@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/dns-equal/-/dns-equal-1.0.0.tgz#b39e7f1da6eb0a75ba9c17324b34753c47e0654d"
@@ -4236,13 +4248,13 @@ eslint-scope@^4.0.0, eslint-scope@^4.0.3:
     estraverse "^4.1.1"
 
 eslint-utils@^1.3.1:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-1.4.0.tgz#e2c3c8dba768425f897cf0f9e51fe2e241485d4c"
-  integrity sha512-7ehnzPaP5IIEh1r1tkjuIrxqhNkzUJa9z3R92tLJdZIVdWaczEhr3EbhGtsMrVxi1KeR8qA7Off6SWc5WNQqyQ==
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-1.4.3.tgz#74fec7c54d0776b6f67e0251040b5806564e981f"
+  integrity sha512-fbBN5W2xdY45KulGXmLHZ3c3FHfVYmKg0IrAKGOkT/464PQsx2UeIzfz1RmEci+KLm1bBaAzZAh8+/E+XAeZ8Q==
   dependencies:
-    eslint-visitor-keys "^1.0.0"
+    eslint-visitor-keys "^1.1.0"
 
-eslint-visitor-keys@^1.0.0:
+eslint-visitor-keys@^1.0.0, eslint-visitor-keys@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
   integrity sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
@@ -4790,6 +4802,13 @@ fill-range@^4.0.0:
     repeat-string "^1.6.1"
     to-regex-range "^2.1.0"
 
+filter-invalid-dom-props@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/filter-invalid-dom-props/-/filter-invalid-dom-props-2.0.0.tgz#527f1494cb3c4f282a73c43804153eb80c42dc2c"
+  integrity sha1-Un8UlMs8Tygqc8Q4BBU+uAxC3Cw=
+  dependencies:
+    html-attributes "1.1.0"
+
 finalhandler@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/finalhandler/-/finalhandler-1.1.2.tgz#b7e7d000ffd11938d0fdb053506f6ebabe9f587d"
@@ -5020,6 +5039,17 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
+gatsby-background-image@^0.8.9:
+  version "0.8.15"
+  resolved "https://registry.yarnpkg.com/gatsby-background-image/-/gatsby-background-image-0.8.15.tgz#f28bbb93df1b69e2606c8c0ec51f9c5941457d78"
+  integrity sha512-3W/DsoYmPmjnd/SO5HNQoa+SFU8PmhJT7UIRce1Koo0E1kjB1V0VTVgQXBCjSx6MLjLABmBJ0FI0Lim7qkxagA==
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    filter-invalid-dom-props "^2.0.0"
+    global "^4.4.0"
+    prop-types "^15.7.2"
+    short-uuid "^3.1.1"
+
 gatsby-cli@^2.7.31:
   version "2.7.31"
   resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.7.31.tgz#b59999951c93626fa93a5e27e0cf309fab346cad"
@@ -5109,6 +5139,11 @@ gatsby-page-utils@^0.0.5:
     lodash "^4.17.14"
     micromatch "^3.1.10"
     slash "^1.0.0"
+
+gatsby-plugin-env-variables@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-env-variables/-/gatsby-plugin-env-variables-1.0.1.tgz#89cdf43b03d46105521bb7d0f09d0d5b92ad83c8"
+  integrity sha512-TnXU+IjvM3iHcaNOa+alqP3Wk19+pmxvXwMyoPaUZIDKNwvpXRz8klsag2AwNlsqD17949/m8I80z8plZRyE1w==
 
 gatsby-plugin-feed@^2.3.6:
   version "2.3.6"
@@ -5633,7 +5668,7 @@ global-prefix@^1.0.1:
     is-windows "^1.0.1"
     which "^1.2.14"
 
-global@^4.3.0:
+global@^4.3.0, global@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/global/-/global-4.4.0.tgz#3e7b105179006a323ed71aafca3e9c57a5cc6406"
   integrity sha512-wv/LAoHdRE3BeTGz53FAamhGlPLhlssK45usmGFThIi4XqnBmjKQ16u+RNbP7WvigRZDxUsM0J3gcQ5yicaL0w==
@@ -6129,6 +6164,11 @@ hsla-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/hsla-regex/-/hsla-regex-1.0.0.tgz#c1ce7a3168c8c6614033a4b5f7877f3b225f9c38"
   integrity sha1-wc56MWjIxmFAM6S194d/OyJfnDg=
 
+html-attributes@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/html-attributes/-/html-attributes-1.1.0.tgz#82027a4fac7a6070ea6c18cc3886aea18d6dea09"
+  integrity sha1-ggJ6T6x6YHDqbBjMOIauoY1t6gk=
+
 html-comment-regex@^1.1.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/html-comment-regex/-/html-comment-regex-1.1.2.tgz#97d4688aeb5c81886a364faa0cad1dda14d433a7"
@@ -6502,6 +6542,11 @@ internal-ip@^4.3.0:
   dependencies:
     default-gateway "^4.2.0"
     ipaddr.js "^1.9.0"
+
+intersection-observer@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.7.0.tgz#ee16bee978db53516ead2f0a8154b09b400bbdc9"
+  integrity sha512-Id0Fij0HsB/vKWGeBe9PxeY45ttRiBmhFyyt/geBdDHBYNctMRTE3dC1U3ujzz3lap+hVXlEcVaB56kZP/eEUg==
 
 into-stream@^3.1.0:
   version "3.1.0"
@@ -9843,6 +9888,13 @@ react-fast-compare@^2.0.2:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
   integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
 
+react-grid-system@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/react-grid-system/-/react-grid-system-5.0.2.tgz#ffe03ba57840271a6bfafc9856a9ca0633bf79b9"
+  integrity sha512-UJMPhI+/wsclsD+G6l0Z8hF1cq25SIW3VLmp+gLDaNs9hsMBvJHFKzTnf6KMZd++YpiB26aZr4ykhQDe/uPE7Q==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-helmet@^5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-5.2.1.tgz#16a7192fdd09951f8e0fe22ffccbf9bb3e591ffa"
@@ -10753,6 +10805,14 @@ shell-quote@1.6.1:
     array-map "~0.0.0"
     array-reduce "~0.0.0"
     jsonify "~0.0.0"
+
+short-uuid@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/short-uuid/-/short-uuid-3.1.1.tgz#3ff427074b5fa7822c3793994d18a7a82e2f73a4"
+  integrity sha512-7dI69xtJYpTIbg44R6JSgrbDtZFuZ9vAwwmnF/L0PinykbFrhQ7V8omKsQcVw1TP0nYJ7uQp1PN6/aVMkzQFGQ==
+  dependencies:
+    any-base "^1.1.0"
+    uuid "^3.3.2"
 
 sift@^5.1.0:
   version "5.1.0"
@@ -11804,11 +11864,12 @@ typography-normalize@^0.16.19:
   resolved "https://registry.yarnpkg.com/typography-normalize/-/typography-normalize-0.16.19.tgz#58e0cf12466870c5b27006daa051fe7307780660"
   integrity sha512-vtnSv/uGBZVbd4e/ZhZB9HKBgKKlWQUXw74+ADIHHxzKp27CEf8PSR8TX1zF2qSyQ9/qMdqLwXYz8yRQFq9JLQ==
 
-typography-theme-wordpress-2016@^0.16.19:
+typography-theme-grand-view@^0.16.19:
   version "0.16.19"
-  resolved "https://registry.yarnpkg.com/typography-theme-wordpress-2016/-/typography-theme-wordpress-2016-0.16.19.tgz#de2ecf20fc4f51db9ca2b149a731d31d8ca9c9ab"
-  integrity sha512-J7AWs8mHQyCtAzvhTs1QcAuzv1QoYsue0xw5U430fBxUystWLQba9OphcycFshgDbm6B/k5ge0d4feYp9xOJ2A==
+  resolved "https://registry.yarnpkg.com/typography-theme-grand-view/-/typography-theme-grand-view-0.16.19.tgz#696b1c42f755d0f559b7b671e1705f76e69c658d"
+  integrity sha512-D7JsfJ3r29aCERgOD2XhIdwAxOHroBEKzpGwm7nznF9EyO1kioC8+tjROVsSU5YRYvwMqIPdXtmd3h3NLHEe7Q==
   dependencies:
+    compass-vertical-rhythm "^1.2.1"
     gray-percentage "^2.0.0"
     typography-breakpoint-constants "^0.16.19"
 
