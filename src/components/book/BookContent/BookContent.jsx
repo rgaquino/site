@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { DiscussionEmbed } from 'disqus-react';
 import { Container, Row, Col } from 'react-grid-system';
 
-import { BLOG_PATH } from '../../../utils/paths';
+import { rhythm } from '../../../utils/typography';
 
 class BookContent extends Component {
   render() {
@@ -16,7 +15,7 @@ class BookContent extends Component {
             <h2>Highlights</h2>
             {book.highlights.map((highlight, idx) => {
               var sep;
-              if (idx != book.highlights.length - 1) {
+              if (idx !== book.highlights.length - 1) {
                 sep = (
                   <div
                     style={{

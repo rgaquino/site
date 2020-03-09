@@ -1,12 +1,9 @@
 import React, { Fragment } from "react";
 import { graphql } from "gatsby";
-import { Link } from "gatsby";
 
-import LabelTag from "../components/common/LabelTag";
 import SEO from "../components/common/SEO";
 import Footer from "../components/common/Footer";
-import { Container, Row, Col } from "react-grid-system";
-import { rhythm } from "../utils/typography";
+
 import BookHeader from "../components/book/BookHeader/BookHeader";
 import BookContent from "../components/book/BookContent/BookContent";
 

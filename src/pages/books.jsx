@@ -1,16 +1,11 @@
 import React from 'react';
-import Image from 'gatsby-image';
-import { Link } from 'gatsby';
 
 import SEO from '../components/common/SEO';
 
 import { Container, Row, Col } from 'react-grid-system';
 
-import { rhythm } from '../utils/typography';
-
 import Footer from '../components/common/Footer';
 import Navbar from '../components/common/Navbar';
-import LabelTag from '../components/common/LabelTag';
 
 import { READING_LIST_PATH } from '../utils/paths';
 import BookList from '../components/book/BookList/BookList';
@@ -40,7 +35,7 @@ class BooksIndex extends React.Component {
             </Col>
           </Row>
           <hr />
-          <BookList books={data.books}/>
+          <BookList books={data.allBooks.edges}/>
         </Container>
         <Footer />
       </div>

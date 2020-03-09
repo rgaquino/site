@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-grid-system';
 
 import LabelTag from '../../common/LabelTag/index';
-import Arrow from '../../common/Arrow/index';
 import { rhythm } from '../../../utils/typography';
 
 class BookHeader extends Component {
@@ -17,7 +16,7 @@ class BookHeader extends Component {
           <Col lg={4} offset={{ lg: 4 }} style={{ textAlign: "center" }}>
             <LabelTag value={book.lastFinishedAt} />
             <Link to={`/books`}>
-              <img src={imageLink} />
+              <img src={imageLink} alt={book.title} />
             </Link>
           </Col>
         </Row>

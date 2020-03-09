@@ -1,4 +1,5 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
+import { Row } from 'react-grid-system';
 import PropTypes from 'prop-types';
 
 import BookListItem from './BookListItem';
@@ -6,11 +7,11 @@ import BookListItem from './BookListItem';
 class BookList extends Component {
   render() {
     return (
-      <Fragment>
+      <Row>
         {this.props.books.map(({ node }) => {
           return <BookListItem key={node.slug} book={node} />;
         })}
-      </Fragment>
+      </Row>
     );
   }
 }
