@@ -1,18 +1,14 @@
 import React from 'react';
-import Image from 'gatsby-image';
-import { Link } from 'gatsby';
 
 import SEO from '../components/common/SEO';
 
 import { Container, Row, Col } from 'react-grid-system';
 
-import { rhythm } from '../utils/typography';
-
 import Footer from '../components/common/Footer';
 import Navbar from '../components/common/Navbar';
-import LabelTag from '../components/common/LabelTag';
 
 import { READING_LIST_PATH } from '../utils/paths';
+import BookList from '../components/book/BookList/BookList';
 
 class BooksIndex extends React.Component {
   render() {
@@ -39,25 +35,7 @@ class BooksIndex extends React.Component {
             </Col>
           </Row>
           <hr />
-          <Row>
-          {data.allBooks.edges.map(({ node }) => {
-            const imageLink = `${process.env.BOOK_IMAGE_BASE_URL}/${node.slug}.jpg`;
-            return (
-                <Col lg={3} sm={6} style={{textAlign: 'center', paddingTop: rhythm(1.25)}}>
-                  <LabelTag value={node.lastFinishedAt} />
-                  <Link to={`/books/${node.slug}`}>
-                    <img src={imageLink} style={{ objectFit: 'cover ', height: 285}}/>
-                  </Link>
-                  <div>
-                    <Link to={`/books/${node.slug}`}>
-                      <strong>{node.title}</strong>
-                    </Link>
-                    <p>{node.author}</p>
-                  </div>
-                </Col>
-            );
-          })}
-          </Row>
+          <BookList books={data.allBooks.edges}/>
         </Container>
         <Footer />
       </div>
