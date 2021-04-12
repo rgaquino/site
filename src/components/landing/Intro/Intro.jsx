@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
 import Arrow from '../../common/Arrow/index';
-import { WORK_PATH } from '../../../utils/paths';
+import { EATIGO_PATH, XENDIT_PATH } from '../../../utils/paths';
 
 class Intro extends Component {
   render() {
@@ -15,12 +15,8 @@ class Intro extends Component {
             </div>
             <p style={{ fontSize: '1.25em' }}>
               I'm a Software Engineer based in Singapore currently writing
-              backend code for{' '}
-              <a href={WORK_PATH}>
-                <strong>Eatigo</strong>
-              </a>
-              . Nowadays I write mostly in Go and JavaScript. Previously, I
-              worked on financial web applications built using Java.
+              code for <a href={XENDIT_PATH}><strong>Xendit</strong></a>.<br/>
+              Previously, I led the backend team at <a href={EATIGO_PATH}><strong>Eatigo</strong></a>.
             </p>
           </Col>
         </Row>

@@ -13,5 +13,6 @@ export const READING_LIST_PATH = 'https://www.notion.so/rgaquino/Books-fc0169c9c
 export const INSTAGRAM_PATH = 'https://instagram.com/rgaquino';
 export const GITHUB_PATH = 'https://github.com/rgaquino';
 export const LINKEDIN_PATH = 'https://linkedin.com/in/rgaquino';
-export const WORK_PATH = 'https://github.com/eatigo';
+export const XENDIT_PATH = 'https://github.com/xendit';
+export const EATIGO_PATH = 'https://github.com/eatigo';
 export const LETTERBOXD_PATH = 'https://letterboxd.com/rgaquino';

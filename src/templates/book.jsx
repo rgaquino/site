@@ -40,6 +40,7 @@ export const pageQuery = graphql`
       author
       category
       highlights
+      notes
       lastFinishedAt(formatString: "DD MMMM YYYY")
     }
   }
