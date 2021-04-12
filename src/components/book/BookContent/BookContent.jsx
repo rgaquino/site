@@ -7,14 +7,14 @@ import { rhythm } from '../../../utils/typography';
 class BookContent extends Component {
   render() {
     const { book, style } = this.props;
-    var highlights;
+    let highlights;
     if (book.highlights != null) {
       highlights = (
         <Row>
           <Col lg={10} offset={{ lg: 1 }}>
-            <h2>Highlights</h2>
+            <h1>Highlights</h1>
             {book.highlights.map((highlight, idx) => {
-              var sep;
+              let sep;
               if (idx !== book.highlights.length - 1) {
                 sep = (
                   <div
@@ -47,8 +47,27 @@ class BookContent extends Component {
       );
     }
 
+    let notes;
+    if (book.notes != null) {
+      notes = (
+        <Row>
+          <Col lg={10} offset={{ lg: 1 }}>
+            <h1>Notes</h1>
+            <div>
+              <article>
+                <section
+                  dangerouslySetInnerHTML={{ __html: book.notes }}
+                />
+              </article>
+            </div>
+          </Col>
+        </Row>
+      );
+    }
+
     return (
       <Container style={style}>
+        {notes}
         {highlights}
       </Container>
     );
