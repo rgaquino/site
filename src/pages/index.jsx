@@ -45,7 +45,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    sampleBook: file(relativePath: { eq: "commonwealth.jpg" }) {
+    sampleBook: file(relativePath: { eq: "a-promised-land-barack-obama.jpg" }) {
       childImageSharp {
         fluid(quality: 100) {
           ...GatsbyImageSharpFluid
