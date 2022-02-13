@@ -10,7 +10,7 @@ class Intro extends Component {
       <Container>
         <Row>
           <Col lg={12}>
-            <div style={{ fontSize: '15vmin' }}>
+            <div style={{ fontSize: '12vmin' }}>
               <strong>Hi, I'm RG.</strong>
             </div>
             <p style={{ fontSize: '1.25em' }}>

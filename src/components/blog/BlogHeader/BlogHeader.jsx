@@ -18,7 +18,7 @@ class BlogHeader extends Component {
             <LabelTag value={post.frontmatter.date} />
             <div
               style={{
-                fontSize: '8vmin',
+                fontSize: '5vmin',
                 color: '#fff',
                 lineHeight: 1.25,
                 paddingBottom: rhythm(3 / 4),

@@ -90,7 +90,7 @@ module.exports = {
         short_name: `rgaquino`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#242424`,
         display: `minimal-ui`,
         icon: `content/assets/pizzadog.png`,
       },
