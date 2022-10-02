@@ -30,9 +30,9 @@ class LandingPages extends Component {
           <Col lg={12}>
             <BooksLanding
               image={data.sampleBook.childImageSharp.fluid}
-              title="A Promised Land"
-              author="Barack Obama"
-              highlight="Get exposed to other people’s truths, I thought, and attitudes change."
+              title="At Swim, Two Boys"
+              author="Jamie O’Neill"
+              highlight="But remember now: all love does ever rightly show humanity our tenderness."
             />
           </Col>
         </Row>

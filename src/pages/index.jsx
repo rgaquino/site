@@ -45,7 +45,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    sampleBook: file(relativePath: { eq: "a-promised-land-barack-obama.jpg" }) {
+    sampleBook: file(relativePath: { eq: "at-swim-two-boys-jamie-oneill.png" }) {
       childImageSharp {
         fluid(quality: 100) {
           ...GatsbyImageSharpFluid
